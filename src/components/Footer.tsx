@@ -41,7 +41,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-white font-semibold mb-4">Product</h4>
+            <h3 className="text-white font-semibold mb-4">Product</h3>
             <ul className="space-y-2 text-sm">
               <li><Link to="/features" className="hover:text-white transition-colors">Features</Link></li>
               <li><Link to="/pricing" className="hover:text-white transition-colors">Pricing</Link></li>
@@ -50,7 +50,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-white font-semibold mb-4">Who We Serve</h4>
+            <h3 className="text-white font-semibold mb-4">Who We Serve</h3>
             <ul className="space-y-2 text-sm">
               <li><Link to="/features" className="hover:text-white transition-colors">Quick Service (QSR)</Link></li>
               <li><Link to="/features" className="hover:text-white transition-colors">Full Service Dining</Link></li>
@@ -62,7 +62,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-white font-semibold mb-4">Legal</h4>
+            <h3 className="text-white font-semibold mb-4">Legal</h3>
             <ul className="space-y-2 text-sm">
               <li><Link to="/about" className="hover:text-white transition-colors">Contact</Link></li>
               <li><Link to="/" className="hover:text-white transition-colors">Privacy Policy</Link></li>
