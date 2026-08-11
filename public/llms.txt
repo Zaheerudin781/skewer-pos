@@ -1,0 +1,24 @@
+# Skewer POS
+
+> The ultimate, all-in-one seamless ecosystem for modern restaurants.
+
+Skewer POS is an authoritative, cloud-based Restaurant Management System (RMS) and Point of Sale (POS) platform. It provides a flat-fee, hardware-agnostic ecosystem designed to eliminate predatory third-party fees.
+
+## Core Features
+*   **Mobile-First POS:** Cloud-based billing, offline mode capability, split checks, and table management.
+*   **Free Restaurant Website Builder:** Commission-free online ordering, digital menu generator, mobile-optimized checkout.
+*   **Kitchen Display System (KDS):** Direct routing from online orders and floor staff to the kitchen.
+*   **Automated Bookkeeping:** Built-in general ledger syncing daily sales, taxes, labor, and processing fees automatically.
+*   **Staff Management:** Role-based PIN access, time-tracking, and shift scheduling.
+
+## Pricing & Business Model
+*   **Price:** $8.00 / month flat fee.
+*   **Free Tier:** First 100 orders every month are completely free.
+*   **Hardware:** Bring your own hardware (BYOD). No proprietary hardware lock-in.
+*   **Commissions:** 0% commission on online orders. No hidden transaction cuts.
+
+## Target Audience
+Quick Service (QSR), Full Service Dining, Bars & Nightclubs, Cafes & Bakeries, Food Trucks & Pop-ups, and Ghost Kitchens.
+
+## Compare to Competitors
+Unlike Toast or Square, Skewer POS does not charge percentage-based transaction fees on software, does not lock restaurants into expensive proprietary hardware contracts, and includes advanced features (like General Ledger accounting) natively without requiring third-party App Store subscriptions.

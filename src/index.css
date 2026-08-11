@@ -1,0 +1,145 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@layer base {
+  :root {
+    --background: #FFFFFF;
+    --surface: #F8FAFC;
+    --text-primary: #1E293B;
+    --text-secondary: #64748B;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--text-primary);
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/70 backdrop-blur-md border border-blue-200 shadow-sm;
+  }
+  
+  .glass-dark {
+    @apply bg-slate-900/70 backdrop-blur-md border border-blue-500/50 shadow-[0_8px_30px_rgb(0,0,0,0.12)];
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#4facfe] to-[#00f2fe];
+  }
+  
+  .bg-gradient-primary {
+    @apply bg-gradient-to-r from-[#4facfe] to-[#00f2fe];
+  }
+
+  .btn-hollow, .btn-solid {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .btn-solid {
+    background-color: transparent !important;
+  }
+  
+  .btn-solid::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: var(--base-color, #2563eb);
+    z-index: -2;
+  }
+  
+  .btn-hollow::before, .btn-solid::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    padding-top: 0;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1), padding-top 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: -1;
+  }
+
+  .btn-hollow::before {
+    background-color: var(--fill-color, #2563eb);
+  }
+
+  .btn-solid::before {
+    background-color: var(--hover-color, #1d4ed8);
+  }
+  
+  .btn-hollow:hover::before, .btn-solid:hover::before {
+    width: 300%;
+    padding-top: 300%;
+  }
+
+  .btn-hollow:hover {
+    color: #ffffff !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  }
+
+  .btn-hollow:active, .btn-solid:active {
+    transform: translateY(1px);
+  }
+
+  .nav-drop {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 9999px;
+    padding: 0.375rem 1rem;
+  }
+
+  .nav-drop::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    padding-top: 0;
+    border-radius: 50%;
+    background-color: #eff6ff; /* blue-50 */
+    transform: translate(-50%, -50%);
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding-top 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: -1;
+  }
+
+  .nav-drop:hover::before, .nav-drop.active::before {
+    width: 300%;
+    padding-top: 300%;
+  }
+
+  .nav-drop:hover {
+    color: #2563eb !important; /* blue-600 */
+  }
+
+  .btn-hollow-blue {
+    --fill-color: #2563eb;
+  }
+  .btn-hollow-slate {
+    --fill-color: #334155;
+  }
+  .btn-hollow-green {
+    --fill-color: #25D366;
+  }
+  .btn-hollow-light {
+    --fill-color: #38bdf8;
+  }
+  
+  .btn-solid-blue {
+    --base-color: #2563eb;
+    --hover-color: #1d4ed8;
+  }
+}
