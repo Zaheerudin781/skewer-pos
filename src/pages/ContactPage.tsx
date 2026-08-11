@@ -1,8 +1,13 @@
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
 
 const ContactPage = () => {
   return (
     <div className="pt-32 pb-24 min-h-[80vh]">
+      <Helmet>
+        <title>Contact Us | Skewer POS</title>
+        <meta name="description" content="Get in touch with the Skewer POS team. We're here to help you upgrade your restaurant with the best POS, website builder, and management tools." />
+      </Helmet>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <motion.h1 

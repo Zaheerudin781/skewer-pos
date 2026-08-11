@@ -71,6 +71,9 @@ const RestaurantTypes = () => {
                 <img 
                   src={type.img} 
                   alt={type.title} 
+                  loading="lazy"
+                  width="600"
+                  height="336"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                 />
               </div>

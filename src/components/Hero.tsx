@@ -108,7 +108,7 @@ const Hero = () => {
                       Online
                     </div>
                     <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-slate-200 border border-white shadow-sm overflow-hidden">
-                      <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=facearea&facepad=2&w=100&h=100&q=80" alt="User" />
+                      <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=facearea&facepad=2&w=100&h=100&q=80" alt="User" width="30" height="30" />
                     </div>
                   </div>
                 </div>
@@ -129,7 +129,7 @@ const Hero = () => {
                         { name: 'Classic Burger', price: '$12.00', img: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=200&q=80', color: 'from-orange-100 to-orange-50' },
                         { name: 'Cheese Fries', price: '$6.50', img: 'https://images.unsplash.com/photo-1576107232684-1279f390859f?auto=format&fit=crop&w=200&q=80', color: 'from-yellow-100 to-yellow-50' },
                         { name: 'Craft Cola', price: '$3.50', img: 'https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=200&q=80', color: 'from-slate-200 to-slate-100' },
-                        { name: 'Spicy Wings', price: '$9.00', img: 'https://images.unsplash.com/photo-1569691899455-88464f6d3cb1?auto=format&fit=crop&w=200&q=80', color: 'from-red-100 to-red-50' }
+                        { name: 'Spicy Wings', price: '$9.00', img: 'https://images.unsplash.com/photo-1527477396000-e27163b4bbed?auto=format&fit=crop&w=200&q=80', color: 'from-red-100 to-red-50' }
                       ].map((item, i) => (
                         <div key={i} className="bg-white p-2 rounded-sm md:rounded-sm border border-blue-200 shadow-sm flex flex-col items-center text-center cursor-pointer hover:border-blue-300 transition-colors">
                           <div className={`w-full h-20 md:h-28 rounded-sm md:rounded-sm bg-gradient-to-br ${item.color} mb-2 md:mb-3 overflow-hidden p-1 md:p-2`}>
@@ -144,13 +144,13 @@ const Hero = () => {
                   
                   {/* Right: Current Order */}
                   <div className="hidden md:flex w-64 bg-white p-5 flex-col">
-                    <div className="text-sm font-medium text-slate-800 mb-4">Current Order <span className="text-slate-400 text-xs font-normal">#1042</span></div>
+                    <div className="text-sm font-medium text-slate-800 mb-4">Current Order <span className="text-slate-500 text-xs font-normal">#1042</span></div>
                     
                     <div className="flex-1 overflow-hidden flex flex-col gap-3">
                       <div className="flex justify-between items-start text-xs border-b border-blue-200 pb-3">
                         <div>
                           <div className="font-medium text-slate-800">1x Classic Burger</div>
-                          <div className="text-slate-400 mt-0.5">No onions, extra sauce</div>
+                          <div className="text-slate-500 mt-0.5">No onions, extra sauce</div>
                         </div>
                         <div className="font-medium text-slate-800">$12.00</div>
                       </div>

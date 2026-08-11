@@ -56,7 +56,7 @@ const WebsiteBuilder = () => {
                    <div className="ml-4 flex-1 h-6 bg-white/5 rounded-sm flex items-center px-3 text-xs text-slate-400 font-medium">skewer-pos.com</div>
                  </div>
                  <div className="flex-1 w-full h-full bg-slate-900 overflow-hidden">
-                   <img src="/website_mockup.jpg" alt="Restaurant Website Mockup" className="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity" />
+                   <img src="/website_mockup.jpg" alt="Restaurant Website Mockup" loading="lazy" className="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity" />
                  </div>
                </div>
             </div>

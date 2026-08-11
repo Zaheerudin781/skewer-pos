@@ -13,7 +13,7 @@ const ProductCarousel = () => {
       accent: 'text-amber-600',
       mockup: (
         <div className="w-full h-full rounded-t-xl overflow-hidden shadow-2xl border-t border-x border-amber-200/50 bg-white">
-          <img src="/images/website.jpg" alt="Website Builder UI" className="w-full h-full object-cover object-top" />
+          <img src="/images/website.jpg" alt="Website Builder UI" loading="lazy" className="w-full h-full object-cover object-top" />
         </div>
       )
     },
@@ -26,7 +26,7 @@ const ProductCarousel = () => {
       accent: 'text-sky-600',
       mockup: (
         <div className="w-full h-full rounded-t-xl overflow-hidden shadow-2xl border-t border-x border-sky-200/50 bg-white">
-          <img src="/images/pos.jpg" alt="Mobile POS UI" className="w-full h-full object-cover object-top" />
+          <img src="/images/pos.jpg" alt="Mobile POS UI" loading="lazy" className="w-full h-full object-cover object-top" />
         </div>
       )
     },
@@ -39,7 +39,7 @@ const ProductCarousel = () => {
       accent: 'text-green-600',
       mockup: (
         <div className="w-full h-full rounded-t-xl overflow-hidden shadow-2xl border-t border-x border-green-200/50 bg-white">
-          <img src="/images/accounting.jpg" alt="Accounting Ledger UI" className="w-full h-full object-cover object-top" />
+          <img src="/images/accounting.jpg" alt="Accounting Ledger UI" loading="lazy" className="w-full h-full object-cover object-top" />
         </div>
       )
     },
@@ -52,7 +52,7 @@ const ProductCarousel = () => {
       accent: 'text-purple-600',
       mockup: (
         <div className="w-full h-full rounded-t-xl overflow-hidden shadow-2xl border-t border-x border-purple-200/50 bg-white">
-          <img src="/images/staff.jpg" alt="Staff Management UI" className="w-full h-full object-cover object-top" />
+          <img src="/images/staff.jpg" alt="Staff Management UI" loading="lazy" className="w-full h-full object-cover object-top" />
         </div>
       )
     }
@@ -134,12 +134,14 @@ const ProductCarousel = () => {
           <div className="flex justify-center md:justify-end gap-3 mt-2 pr-4">
             <button 
               onClick={handlePrev}
+              aria-label="Previous slide"
               className="w-12 h-12 rounded-full bg-[#0c2b47] text-white flex items-center justify-center hover:bg-slate-800 transition-colors shadow-lg"
             >
               <ChevronLeft className="w-6 h-6" />
             </button>
             <button 
               onClick={handleNext}
+              aria-label="Next slide"
               className="w-12 h-12 rounded-full bg-[#0c2b47] text-white flex items-center justify-center hover:bg-slate-800 transition-colors shadow-lg"
             >
               <ChevronRight className="w-6 h-6" />

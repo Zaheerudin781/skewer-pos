@@ -35,13 +35,13 @@ const Footer = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 border-t border-slate-800 pt-12">
           <div className="col-span-2 lg:col-span-2">
             <span className="text-2xl font-semibold text-white tracking-tight">Skewer POS</span>
-            <p className="mt-4 text-slate-500 max-w-sm">
+            <p className="mt-4 text-slate-400 max-w-sm">
               The ultimate, all-in-one seamless ecosystem for modern restaurants. Break free from predatory tech.
             </p>
           </div>
           
           <div>
-            <h4 className="text-white font-semibold mb-4">Product</h4>
+            <h3 className="text-white font-semibold mb-4">Product</h4>
             <ul className="space-y-2 text-sm">
               <li><Link to="/features" className="hover:text-white transition-colors">Features</Link></li>
               <li><Link to="/pricing" className="hover:text-white transition-colors">Pricing</Link></li>
@@ -50,7 +50,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-white font-semibold mb-4">Who We Serve</h4>
+            <h3 className="text-white font-semibold mb-4">Who We Serve</h4>
             <ul className="space-y-2 text-sm">
               <li><Link to="/features" className="hover:text-white transition-colors">Quick Service (QSR)</Link></li>
               <li><Link to="/features" className="hover:text-white transition-colors">Full Service Dining</Link></li>
@@ -62,7 +62,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="text-white font-semibold mb-4">Legal</h4>
+            <h3 className="text-white font-semibold mb-4">Legal</h4>
             <ul className="space-y-2 text-sm">
               <li><Link to="/about" className="hover:text-white transition-colors">Contact</Link></li>
               <li><Link to="/" className="hover:text-white transition-colors">Privacy Policy</Link></li>
@@ -71,7 +71,7 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="mt-12 text-center text-sm text-slate-600">
+        <div className="mt-12 text-center text-sm text-slate-500">
           &copy; {new Date().getFullYear()} Skewer POS. All rights reserved.
         </div>
       </div>
