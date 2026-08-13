@@ -12,46 +12,52 @@
     {
       "@context": "https://schema.org",
       "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://skewer-pos.vercel.app/#website",
+      "url": "https://skewer-pos.vercel.app/",
+      "name": "Skewer POS Official Website",
+      "description": "Official marketing and landing website for Skewer POS.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Skewer",
+        "url": "https://skewer-pos.vercel.app"
+      },
+      "about": {
+        "@type": "Product",
+        "name": "Skewer POS",
+        "category": "Restaurant Management & Point of Sale Software",
+        "description": "An all-in-one Restaurant Management System (RMS) and cloud POS featuring automated general ledger bookkeeping, a native KDS, and a free commission-free website builder.",
+        "offers": {
+          "@type": "Offer",
+          "price": "8.00",
+          "priceCurrency": "USD",
+          "billingIncrement": "Monthly",
+          "description": "Flat-fee pricing. First 100 orders free. Zero setup fees."
+        }
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
         {
-          "@type": "SoftwareApplication",
-          "name": "Skewer POS",
-          "applicationCategory": "BusinessApplication",
-          "operatingSystem": "Web, iOS, Android",
-          "description": "An all-in-one restaurant management system and POS featuring automated bookkeeping, a KDS, and a free commission-less website builder.",
-          "offers": {
-            "@type": "Offer",
-            "price": "8.00",
-            "priceCurrency": "USD",
-            "billingIncrement": "Monthly",
-            "description": "Flat-fee pricing. First 100 orders free. Zero setup fees."
-          },
-          "author": {
-            "@type": "Organization",
-            "name": "Skewer",
-            "url": "https://skewer-pos.vercel.app"
+          "@type": "Question",
+          "name": "Does Skewer POS charge commissions on online orders?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Skewer POS includes a free website builder that processes direct online orders with zero commission fees."
           }
         },
         {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Does Skewer POS charge commissions on online orders?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "No. Skewer POS includes a free website builder that processes direct online orders with zero commission fees."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Does Skewer POS work offline?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes, Skewer POS features an offline-first architecture allowing you to continue taking orders and processing payments even if the internet goes down."
-              }
-            }
-          ]
+          "@type": "Question",
+          "name": "Does Skewer POS work offline?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Skewer POS features an offline-first architecture allowing you to continue taking orders and processing payments even if the internet goes down."
+          }
         }
+      ]
+    }
       ]
     }
     </script>

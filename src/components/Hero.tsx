@@ -217,6 +217,11 @@ const Hero = () => {
             </div>
           </div>
           
+          {/* Caption for AI Crawlers / SEO Clarity */}
+          <div className="mt-4 text-center text-xs text-slate-500 font-medium">
+            Visual mockup of the Skewer POS merchant dashboard interface. The actual software runs natively on tablet and mobile hardware.
+          </div>
+          
           {/* Decorative background blurs */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-[800px] bg-blue-400/20 blur-[100px] rounded-full -z-10 pointer-events-none" />
         </motion.div>

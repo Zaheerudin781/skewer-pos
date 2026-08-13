@@ -66,6 +66,13 @@ const Header = () => {
             <a 
               href="https://frontend-blush-seven-e1vr2indno.vercel.app"
               target="_blank" rel="noopener noreferrer"
+              className="hidden md:inline-flex text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors px-3 py-2.5"
+            >
+              Log In
+            </a>
+            <a 
+              href="https://frontend-blush-seven-e1vr2indno.vercel.app"
+              target="_blank" rel="noopener noreferrer"
               className="hidden md:flex items-center justify-center btn-solid btn-solid-blue border border-blue-600 text-white text-sm font-medium px-6 py-2.5 rounded-sm hover:border-blue-700 transition-colors cursor-pointer shadow-sm"
             >
               Get Started
@@ -113,13 +120,22 @@ const Header = () => {
             </svg>
             Helpline
           </a>
-          <a 
-            href="https://frontend-blush-seven-e1vr2indno.vercel.app"
-            target="_blank" rel="noopener noreferrer"
-            className="w-full flex items-center justify-center btn-solid btn-solid-blue border border-blue-600 text-white text-sm font-medium px-6 py-2.5 rounded-sm transition-colors cursor-pointer shadow-sm"
-          >
-            Get Started
-          </a>
+          <div className="flex gap-2 w-full mt-2">
+            <a 
+              href="https://frontend-blush-seven-e1vr2indno.vercel.app"
+              target="_blank" rel="noopener noreferrer"
+              className="w-1/2 flex items-center justify-center border border-slate-300 text-slate-700 text-sm font-medium px-6 py-2.5 rounded-sm transition-colors cursor-pointer"
+            >
+              Log In
+            </a>
+            <a 
+              href="https://frontend-blush-seven-e1vr2indno.vercel.app"
+              target="_blank" rel="noopener noreferrer"
+              className="w-1/2 flex items-center justify-center btn-solid btn-solid-blue border border-blue-600 text-white text-sm font-medium px-6 py-2.5 rounded-sm transition-colors cursor-pointer shadow-sm"
+            >
+              Get Started
+            </a>
+          </div>
         </div>
       )}
     </header>
