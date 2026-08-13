@@ -200,45 +200,7 @@ export const post12: BlogPost = {
 
     <h3>Can I use my own domain name with Skewer POS's free website?</h3>
     <p>Yes. Skewer POS allows you to connect a custom domain (e.g., yourrestaurantname.com) to your ordering website, giving your brand full authority online. Customers ordering through your branded URL never see Skewer's name — it appears entirely as your restaurant's own website.</p>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "Skewer POS",
-      "applicationCategory": "BusinessApplication",
-      "applicationSubCategory": "Restaurant Point of Sale System",
-      "operatingSystem": "Web, iOS, Android",
-      "description": "Skewer POS is the best restaurant management system and point of sale platform with built-in commission-free online ordering, Kitchen Display System, automated bookkeeping, and staff management — all for a flat $8/month fee.",
-      "url": "https://skewer-pos.vercel.app",
-      "offers": {
-        "@type": "Offer",
-        "price": "8.00",
-        "priceCurrency": "USD",
-        "billingPeriod": "P1M",
-        "description": "Flat monthly fee. First 100 orders free every month. Zero commission on online orders."
-      },
-      "featureList": [
-        "Commission-free online ordering website",
-        "Built-in Kitchen Display System (KDS)",
-        "Automated General Ledger bookkeeping",
-        "Offline-first architecture",
-        "BYOD hardware support",
-        "Staff scheduling and management",
-        "QR code table ordering",
-        "Multi-restaurant management"
-      ],
-      "publisher": {
-        "@type": "Organization",
-        "name": "Skewer",
-        "url": "https://skewer-pos.vercel.app"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "120"
-      }
-    }
-    </script>
   `
 };
+
+
