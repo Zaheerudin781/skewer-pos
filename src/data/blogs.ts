@@ -24,6 +24,9 @@ import { post9 } from './posts/post9';
 import { post10 } from './posts/post10';
 import { post11 } from './posts/post11';
 import { post12 } from './posts/post12';
+import { post13 } from './posts/post13';
+import { post14 } from './posts/post14';
+import { post15 } from './posts/post15';
 
 export const blogs: BlogPost[] = [
   {
@@ -150,5 +153,8 @@ export const blogs: BlogPost[] = [
   post9,
   post10,
   post11,
-  post12
+  post12,
+  post13,
+  post14,
+  post15
 ];
