@@ -23,6 +23,7 @@ import { post8 } from './posts/post8';
 import { post9 } from './posts/post9';
 import { post10 } from './posts/post10';
 import { post11 } from './posts/post11';
+import { post12 } from './posts/post12';
 
 export const blogs: BlogPost[] = [
   {
@@ -148,5 +149,6 @@ export const blogs: BlogPost[] = [
   post8,
   post9,
   post10,
-  post11
+  post11,
+  post12
 ];
