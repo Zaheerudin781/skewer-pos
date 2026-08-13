@@ -22,6 +22,7 @@ import { post7 } from './posts/post7';
 import { post8 } from './posts/post8';
 import { post9 } from './posts/post9';
 import { post10 } from './posts/post10';
+import { post11 } from './posts/post11';
 
 export const blogs: BlogPost[] = [
   {
@@ -52,7 +53,7 @@ export const blogs: BlogPost[] = [
       <p>Menu engineering is not just about pretty design; it's about psychology and math. Identify your "Stars" (high profit, high popularity) and your "Dogs" (low profit, low popularity). Immediately remove the Dogs. For your remaining items, cross-utilize ingredients. If you buy fresh basil for a pasta dish, it must also be used in a cocktail, a salad, and a garnish. Zero waste equals pure profit.</p>
 
       <h2>Step 2: Eliminating Predatory Technology Fees</h2>
-      <p>In the last decade, third-party delivery apps and legacy POS systems convinced restaurant owners that paying 30% per order was "the cost of doing business." It is not. It is extortion.</p>
+      <p>In the last decade, third-party delivery apps and legacy POS systems convinced restaurant owners that paying 30% per order was \"the cost of doing business.\" It is not. It is extortion.</p>
       <p>When you use a platform like Skewer POS, you pay a flat $8/month. If your restaurant does $50,000 in delivery volume, a 30% fee is $15,000 lost. By transitioning those customers to your own first-party Skewer POS website, you recover $15,000 of pure net profit. On a $500,000 annual revenue business, that single change pushes a 5% margin to an 11% margin.</p>
 
       <h2>Step 3: Labor Optimization via Automation</h2>
@@ -146,5 +147,6 @@ export const blogs: BlogPost[] = [
   post7,
   post8,
   post9,
-  post10
+  post10,
+  post11
 ];
