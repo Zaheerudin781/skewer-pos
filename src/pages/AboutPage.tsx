@@ -88,7 +88,7 @@ const AboutPage = () => {
               <img 
                 src="/ceo-zaheerudin.jpg" 
                 alt="Zaheerudin Hamza, CEO of Skewer POS" 
-                className="relative z-10 rounded-md w-full h-[450px] object-cover object-top shadow-xl"
+                className="relative z-10 rounded-md w-full h-[450px] object-cover object-center shadow-xl"
               />
             </div>
             <div className="md:col-span-3">
