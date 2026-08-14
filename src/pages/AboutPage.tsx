@@ -86,7 +86,7 @@ const AboutPage = () => {
             <div className="md:col-span-2 relative">
               <div className="absolute inset-0 bg-blue-500 rounded-md translate-x-4 translate-y-4 opacity-20"></div>
               <img 
-                src="/ceo-zaheerudin.jpg" 
+                src="/ceo-hamza.jpg" 
                 alt="Zaheerudin Hamza, CEO of Skewer POS" 
                 className="relative z-10 rounded-md w-full h-[450px] object-cover object-center shadow-xl"
               />
@@ -106,7 +106,7 @@ const AboutPage = () => {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-14 h-14 rounded-full bg-slate-900 text-white flex items-center justify-center font-medium text-xl shadow-lg overflow-hidden border border-white">
-                  <img src="/ceo-zaheerudin.jpg" alt="Zaheerudin Hamza" className="w-full h-full object-cover object-top" />
+                  <img src="/ceo-hamza.jpg" alt="Zaheerudin Hamza" className="w-full h-full object-cover object-center" />
                 </div>
                 <div>
                   <div className="font-medium text-[#0c2b47] text-lg">Zaheerudin Hamza</div>

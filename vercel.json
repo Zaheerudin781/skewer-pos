@@ -1,7 +1,7 @@
 {
   "rewrites": [
     {
-      "source": "/((?!assets/|favicon.ico|logo.png|ceo-zaheerudin.jpg|sitemap.xml|googleb4c58d72268adab2.html).*)",
+      "source": "/((?!assets/|favicon.ico|logo.png|ceo-zaheerudin.jpg|ceo-hamza.jpg|sitemap.xml|googleb4c58d72268adab2.html).*)",
       "destination": "/index.html"
     }
   ]
