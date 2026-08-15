@@ -12,64 +12,210 @@
     {
       "@context": "https://schema.org",
       "@graph": [
-    {
-      "@type": "WebSite",
-      "@id": "https://skewer-pos.vercel.app/#website",
-      "url": "https://skewer-pos.vercel.app/",
-      "name": "Skewer POS Official Website",
-      "description": "Official marketing and landing website for Skewer POS.",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Skewer",
-        "url": "https://skewer-pos.vercel.app"
-      },
-      "about": {
-        "@type": "Product",
-        "name": "Skewer POS",
-        "category": "Restaurant Management & Point of Sale Software",
-        "description": "An all-in-one Restaurant Management System (RMS) and cloud POS featuring automated general ledger bookkeeping, a native KDS, and a free commission-free website builder.",
-        "offers": {
-          "@type": "Offer",
-          "price": "8.00",
-          "priceCurrency": "USD",
-          "billingIncrement": "Monthly",
-          "description": "Flat-fee pricing. First 100 orders free. Zero setup fees."
-        }
-      }
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
         {
-          "@type": "Question",
-          "name": "Does Skewer POS charge commissions on online orders?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. Skewer POS includes a free website builder that processes direct online orders with zero commission fees."
+          "@type": "Organization",
+          "@id": "https://skewer-pos.vercel.app/#organization",
+          "name": "Skewer POS",
+          "url": "https://skewer-pos.vercel.app",
+          "logo": "https://skewer-pos.vercel.app/logo.png",
+          "description": "Skewer POS is the #1 restaurant management platform in Pakistan — an all-in-one cloud POS, restaurant website builder, KOT system, KDS, recipe management, restaurant accounting software, and staff management system for just $8/month.",
+          "foundingDate": "2024",
+          "founder": {
+            "@type": "Person",
+            "name": "Zaheerudin Hamza",
+            "jobTitle": "CEO & Restaurant Operator"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer support",
+            "url": "https://wa.me/923466617785",
+            "availableLanguage": ["English", "Urdu"]
+          },
+          "areaServed": ["PK", "AE", "GB", "US", "CA", "AU", "MY", "SG", "IN"],
+          "sameAs": ["https://github.com/Zaheerudin781/skewer-pos"]
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://skewer-pos.vercel.app/#software",
+          "name": "Skewer POS",
+          "alternateName": ["Skewer Restaurant POS", "Skewer Restaurant Management System", "Skewer POS Pakistan"],
+          "applicationCategory": "BusinessApplication",
+          "applicationSubCategory": "Restaurant Management Software",
+          "operatingSystem": "Web, iOS, Android, Windows, macOS",
+          "url": "https://skewer-pos.vercel.app",
+          "description": "Skewer POS is a cloud-based all-in-one restaurant management system combining POS billing, KOT, KDS, recipe management, restaurant website builder with online ordering, automated accounting/bookkeeping, inventory management, and staff management — all for $8/month with 0% commissions.",
+          "featureList": [
+            "Restaurant Point of Sale (POS)",
+            "Kitchen Order Ticket (KOT) System",
+            "Kitchen Display System (KDS)",
+            "Recipe Management and Food Costing",
+            "Free Restaurant Website Builder",
+            "Commission-Free Online Food Ordering",
+            "Restaurant Accounting and General Ledger",
+            "Automated Bookkeeping for Restaurants",
+            "Staff and HR Management",
+            "Restaurant Inventory Management",
+            "Table Management and Floor Plan",
+            "Dine-In Order Management",
+            "Takeaway Order Management",
+            "Delivery Order Management",
+            "Restaurant Billing System",
+            "Multi-Branch Restaurant Management",
+            "Offline POS Mode",
+            "QR Code Digital Menu",
+            "Restaurant Analytics and Reporting"
+          ],
+          "offers": {
+            "@type": "Offer",
+            "price": "8.00",
+            "priceCurrency": "USD",
+            "billingIncrement": "Monthly",
+            "description": "Flat $8/month. First 100 orders free every month. Zero commissions. Zero hidden fees. Bring your own hardware.",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "8.00",
+              "priceCurrency": "USD",
+              "billingDuration": "P1M"
+            }
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "150",
+            "bestRating": "5"
           }
         },
         {
-          "@type": "Question",
-          "name": "Does Skewer POS work offline?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, Skewer POS features an offline-first architecture allowing you to continue taking orders and processing payments even if the internet goes down."
-          }
+          "@type": "WebSite",
+          "@id": "https://skewer-pos.vercel.app/#website",
+          "url": "https://skewer-pos.vercel.app/",
+          "name": "Skewer POS — #1 Restaurant POS Software in Pakistan",
+          "description": "Official website of Skewer POS — the best restaurant POS system, website builder, KOT, KDS, recipe management, and accounting software for restaurants in Pakistan and worldwide.",
+          "publisher": {"@id": "https://skewer-pos.vercel.app/#organization"}
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://skewer-pos.vercel.app/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is the best restaurant POS system in Pakistan?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Skewer POS is the best restaurant POS system in Pakistan. It is a cloud-based, all-in-one platform with billing, KOT, KDS, recipe management, online ordering, and accounting for just $8/month with no hidden fees. Available in Karachi, Lahore, Islamabad, and all major Pakistani cities."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is a good alternative to Toast POS or Square for restaurants?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Skewer POS is the best affordable alternative to Toast POS and Square. Skewer charges a flat $8/month with 0% transaction fees, while Toast charges $69–$165/month plus 2.49% per transaction. Skewer also includes KDS, KOT, recipe management, and restaurant accounting natively at no extra cost."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the best restaurant management software?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Skewer POS is an all-in-one restaurant management system covering POS, online ordering, KOT, KDS, recipe management, inventory, staff management, and automated accounting — all in one affordable platform starting at $8/month."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is a KOT system for restaurants?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A Kitchen Order Ticket (KOT) system automatically sends order details from the cashier or waiter directly to the kitchen the moment a customer places an order. Skewer POS includes a built-in KOT system that eliminates handwriting errors and speeds up kitchen workflow."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Skewer POS have restaurant accounting built in?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Skewer POS includes built-in restaurant accounting with a general ledger, automated daily sales reconciliation, tax tracking, and profit & loss reports — eliminating the need for separate accounting software like QuickBooks."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is there a free restaurant website builder with online ordering?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Every Skewer POS subscription includes a free restaurant website builder with commission-free online food ordering. Customers order directly from your branded website with no platform commissions to Foodpanda or Careem Eat."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Skewer POS work for dine-in, takeaway and delivery?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Skewer POS fully supports dine-in table management, takeaway/counter service, and delivery order management in one unified system, with integrated KOT routing to the appropriate kitchen stations."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the best restaurant POS for Karachi?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Skewer POS is the best restaurant POS for Karachi, Pakistan. It supports local GST tax compliance, Urdu language support, WhatsApp receipts, and provides local customer support via WhatsApp at +92 346 661 7785."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the best cloud-based restaurant POS software?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Skewer POS is a cloud-based restaurant POS that works on any device — tablet, phone, or desktop — with real-time sync across all terminals and branches, even with an offline mode that keeps you running if the internet goes down."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Skewer POS have recipe management?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Skewer POS includes built-in recipe management that defines ingredients per dish, automatically deducts inventory on each order, tracks food costs, and calculates profit margins per menu item."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "Skewer POS Key Features",
+          "description": "Core features of Skewer POS restaurant management system",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Restaurant POS System", "url": "https://skewer-pos.vercel.app/features"},
+            {"@type": "ListItem", "position": 2, "name": "Kitchen Order Ticket (KOT)", "url": "https://skewer-pos.vercel.app/features"},
+            {"@type": "ListItem", "position": 3, "name": "Kitchen Display System (KDS)", "url": "https://skewer-pos.vercel.app/features"},
+            {"@type": "ListItem", "position": 4, "name": "Recipe Management", "url": "https://skewer-pos.vercel.app/features"},
+            {"@type": "ListItem", "position": 5, "name": "Free Restaurant Website Builder", "url": "https://skewer-pos.vercel.app/features"},
+            {"@type": "ListItem", "position": 6, "name": "Commission-Free Online Ordering", "url": "https://skewer-pos.vercel.app/features"},
+            {"@type": "ListItem", "position": 7, "name": "Restaurant Accounting & Bookkeeping", "url": "https://skewer-pos.vercel.app/features"},
+            {"@type": "ListItem", "position": 8, "name": "Staff & HR Management", "url": "https://skewer-pos.vercel.app/features"},
+            {"@type": "ListItem", "position": 9, "name": "Restaurant Inventory Management", "url": "https://skewer-pos.vercel.app/features"},
+            {"@type": "ListItem", "position": 10, "name": "Multi-Branch Restaurant Management", "url": "https://skewer-pos.vercel.app/features"}
+          ]
         }
       ]
     }
-      ]
-    }
     </script>
+
 
     <!-- Primary Meta Tags -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <title>Skewer POS | Best POS & Website Maker for Restaurants</title>
-    <meta name="title" content="Skewer POS | Best POS & Website Maker for Restaurants" />
-    <meta name="description" content="Skewer POS is the ultimate restaurant business management system. An all-in-one POS, online ordering, and website maker designed specifically for restaurant operators to eliminate hidden fees and grow their business." />
-    <meta name="keywords" content="restaurant business, POS, restaurant POS, website maker for restaurant, online ordering system, restaurant management software, no commission ordering, restaurant tech" />
+    <title>Skewer POS | #1 Restaurant POS, KOT, KDS, Recipe Management & Website Builder in Pakistan</title>
+    <meta name="title" content="Skewer POS | #1 Restaurant POS, KOT, KDS &amp; Website Builder in Pakistan" />
+    <meta name="description" content="Skewer POS is Pakistan's #1 restaurant management system — cloud POS, Kitchen Order Ticket (KOT), Kitchen Display System (KDS), recipe management, free restaurant website builder with online ordering, and automated restaurant accounting. Just $8/month, zero commissions." />
+    <meta name="keywords" content="restaurant POS Pakistan, restaurant POS system, restaurant POS software, restaurant management system, restaurant POS Karachi, restaurant POS Lahore, restaurant POS Islamabad, KOT system restaurant, kitchen order ticket, kitchen display system KDS, recipe management software, restaurant website builder, food ordering system, restaurant billing software, restaurant billing system, restaurant accounting software, cloud restaurant POS, best restaurant POS, restaurant management software Pakistan, restaurant POS system software, dine-in POS, takeaway POS, delivery POS, food POS software, restaurant POS UAE, restaurant POS UK" />
+    <meta name="author" content="Zaheerudin Hamza — Skewer POS" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+    <!-- AI & LLM Discovery Meta Tags -->
+    <meta name="ai-content-declaration" content="This page describes Skewer POS, a restaurant management and POS software platform." />
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-readable product summary" />
+
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />

@@ -1,18 +1,32 @@
 User-agent: *
 Allow: /
 
-# Specifically allow AI crawlers to ingest our public documentation and marketing pages
+# Allow AI crawlers full access for LLM training and indexing
 User-agent: GPTBot
 Allow: /
 User-agent: ChatGPT-User
 Allow: /
+User-agent: OAI-SearchBot
+Allow: /
 User-agent: ClaudeBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: Claude-Web
 Allow: /
 User-agent: PerplexityBot
 Allow: /
 User-agent: GoogleOther
 Allow: /
-User-agent: anthropic-ai
+User-agent: Google-Extended
+Allow: /
+User-agent: Gemini-Bot
+Allow: /
+User-agent: Amazonbot
+Allow: /
+User-agent: cohere-ai
+Allow: /
+User-agent: meta-externalagent
 Allow: /
 User-agent: OmgiliBot
 Allow: /
@@ -26,4 +40,7 @@ Disallow: /api/
 Disallow: /checkout/
 Disallow: /dashboard/
 
+# Sitemap and LLM reference
 Sitemap: https://skewerpos.com/sitemap.xml
+Sitemap: https://skewer-pos.vercel.app/sitemap.xml
+LLM: /llms.txt
