@@ -7,16 +7,14 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
-      registerType: 'autoUpdate',   // ← automatically installs new SW on every deploy
+      registerType: 'autoUpdate',
       injectRegister: 'auto',
       workbox: {
         globPatterns: ['**/*.{js,css,html,ico,png,svg,jpg,webp}'],
-        // HTML is never cached by SW — always fetched fresh from network
         navigateFallback: '/index.html',
         navigateFallbackDenylist: [/\/api\//],
         runtimeCaching: [
           {
-            // index.html → always network-first so updates appear immediately
             urlPattern: ({ request }) => request.mode === 'navigate',
             handler: 'NetworkFirst',
             options: {
@@ -26,7 +24,6 @@ export default defineConfig({
             },
           },
           {
-            // JS/CSS assets → cache-first (they have content hashes, safe to cache long-term)
             urlPattern: /\/assets\//,
             handler: 'CacheFirst',
             options: {
