@@ -5,12 +5,13 @@ import { Link } from 'react-router-dom';
 
 const Hero = () => {
   const phrases = [
-    "Cloud POS built for restaurants.",
-    "Kitchen Display & KOT — real-time.",
-    "Online ordering. Zero commission.",
-    "Restaurant accounting, automated.",
-    "Table & floor management, live.",
-    "Your restaurant website, included."
+    "Built-In Accounting Software",
+    "Online Order-Taking Website",
+    "Stock & Vendor Management System",
+    "Wireless Kitchen Display System (KDS)",
+    "Easy, Fast and Time Saving",
+    "Smart Table & Room Management",
+    "Any Hardware Compatibility (Phone/Tablet)"
   ];
 
   const [currentPhrase, setCurrentPhrase] = useState(0);
@@ -18,7 +19,7 @@ const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentPhrase((prev) => (prev + 1) % phrases.length);
-    }, 4000);
+    }, 3500);
     return () => clearInterval(interval);
   }, []);
 
@@ -40,7 +41,7 @@ const Hero = () => {
             transition={{ duration: 0.6 }}
             className="text-4xl sm:text-5xl md:text-7xl tracking-tight font-semibold text-[#0c2b47] mb-6 md:mb-8 min-h-[180px] md:min-h-[180px]"
           >
-            The #1 Restaurant POS, KOT & KDS System. <br className="hidden md:block" />
+            Point Of Sale for Restaurant <br className="hidden md:block" />
             <div className="relative inline-block w-full h-[120px] sm:h-[80px] md:h-[110px] mt-2 md:mt-4 overflow-visible">
               <AnimatePresence mode="wait">
                 <motion.span
