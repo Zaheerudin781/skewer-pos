@@ -31,9 +31,9 @@ const Header = () => {
           
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2.5 sm:gap-3 group">
-            <img src="/logo.png" alt="Point Of Sale for Restaurants" width="40" height="40" className="h-9 sm:h-10 w-auto object-contain transition-transform group-hover:scale-105" />
+            <img src="/logo.png" alt="Restaurant POS System" width="40" height="40" className="h-9 sm:h-10 w-auto object-contain transition-transform group-hover:scale-105" />
             <span className="text-lg sm:text-xl md:text-2xl font-semibold tracking-tight text-[#0c2b47] group-hover:text-blue-600 transition-colors">
-              Point Of Sale for Restaurants
+              Restaurant POS System
             </span>
           </Link>
 
