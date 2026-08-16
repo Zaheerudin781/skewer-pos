@@ -4,7 +4,7 @@
   "framework": "vite",
   "rewrites": [
     {
-      "source": "/((?!assets/|favicon.ico|logo.png|ceo-zaheerudin.jpg|ceo-hamza.jpg|sitemap.xml|googleb4c58d72268adab2.html).*)",
+      "source": "/((?!assets/|blog-images/|images/|.*\\.[a-zA-Z0-9]+$).*)",
       "destination": "/index.html"
     }
   ],

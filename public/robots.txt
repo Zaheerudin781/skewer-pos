@@ -1,46 +1,57 @@
+# Standard Web Crawlers
 User-agent: *
 Allow: /
-
-# Allow AI crawlers full access for LLM training and indexing
-User-agent: GPTBot
-Allow: /
-User-agent: ChatGPT-User
-Allow: /
-User-agent: OAI-SearchBot
-Allow: /
-User-agent: ClaudeBot
-Allow: /
-User-agent: anthropic-ai
-Allow: /
-User-agent: Claude-Web
-Allow: /
-User-agent: PerplexityBot
-Allow: /
-User-agent: GoogleOther
-Allow: /
-User-agent: Google-Extended
-Allow: /
-User-agent: Gemini-Bot
-Allow: /
-User-agent: Amazonbot
-Allow: /
-User-agent: cohere-ai
-Allow: /
-User-agent: meta-externalagent
-Allow: /
-User-agent: OmgiliBot
-Allow: /
-User-agent: FacebookBot
-Allow: /
-
-# Block sensitive or admin routes from all crawlers
-User-agent: *
 Disallow: /admin/
 Disallow: /api/
 Disallow: /checkout/
 Disallow: /dashboard/
 
-# Sitemap and LLM reference
+# AI Crawlers & LLMs (Full Search & Retrieval Allowed)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Gemini-Bot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: OmgiliBot
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# Sitemaps
 Sitemap: https://skewerpos.com/sitemap.xml
 Sitemap: https://skewer-pos.vercel.app/sitemap.xml
-LLM: /llms.txt
