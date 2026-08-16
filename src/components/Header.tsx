@@ -30,10 +30,10 @@ const Header = () => {
         <div className="flex justify-between items-center h-20">
           
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 group">
-            <img src="/logo.png" alt="Skewer POS Logo" width="40" height="40" className="h-10 w-auto object-contain transition-transform group-hover:scale-105" />
-            <span className="text-2xl font-semibold tracking-tight text-[#0c2b47] group-hover:text-blue-600 transition-colors">
-              Skewer POS
+          <Link to="/" className="flex items-center gap-2.5 sm:gap-3 group">
+            <img src="/logo.png" alt="Point Of Sale for Restaurants" width="40" height="40" className="h-9 sm:h-10 w-auto object-contain transition-transform group-hover:scale-105" />
+            <span className="text-lg sm:text-xl md:text-2xl font-semibold tracking-tight text-[#0c2b47] group-hover:text-blue-600 transition-colors">
+              Point Of Sale for Restaurants
             </span>
           </Link>
 
