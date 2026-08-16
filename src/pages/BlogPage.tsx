@@ -7,7 +7,7 @@ const BlogPage = () => {
   return (
     <div className="pt-24 pb-16 min-h-screen bg-slate-50">
       <Helmet>
-        <title>Restaurant Business Blog | Skewer POS</title>
+        <title>Restaurant POS & Operations Blog | Skewer Restaurant POS</title>
         <meta name="description" content="World-class strategies for restaurant owners. Learn how to optimize profit margins, eliminate third-party fees, and automate your kitchen from zero to hero." />
       </Helmet>
 

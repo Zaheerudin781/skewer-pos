@@ -6,7 +6,7 @@ const PricingPage = () => {
   return (
     <div className="pt-24 bg-white min-h-screen pb-32">
       <Helmet>
-        <title>Pricing | Stop Paying Hidden Fees | Skewer POS</title>
+        <title>Restaurant POS Pricing | $8/Month Flat Fee — Zero Commissions | Skewer POS</title>
         <meta name="description" content="Simple, transparent pricing for Skewer POS. Flat rates, no hidden fees, no percentage cuts. Keep 100% of your restaurant's profits." />
       </Helmet>
       

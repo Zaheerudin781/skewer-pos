@@ -5,7 +5,7 @@ const AboutPage = () => {
   return (
     <div className="pt-32 pb-24 min-h-screen bg-white">
       <Helmet>
-        <title>About Skewer POS | Restaurant Business Empowerment</title>
+        <title>About Skewer Restaurant POS | Built for Restaurant Operators</title>
         <meta name="description" content="Skewer POS is built by restaurant operators, for restaurant operators. Our mission is to end predatory pricing in restaurant tech with the best POS and website maker." />
       </Helmet>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

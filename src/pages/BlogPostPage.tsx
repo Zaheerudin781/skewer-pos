@@ -35,7 +35,7 @@ const BlogPostPage = () => {
   return (
     <article className="pt-24 pb-20 min-h-screen bg-white">
       <Helmet>
-        <title>{blog.title} | Skewer POS</title>
+        <title>{blog.title} | Skewer Restaurant POS</title>
         <meta name="description" content={blog.excerpt} />
         <meta name="keywords" content={blog.seoKeywords.join(', ')} />
         {/* Open Graph Tags */}

@@ -5,7 +5,7 @@ const ContactPage = () => {
   return (
     <div className="pt-32 pb-24 min-h-[80vh]">
       <Helmet>
-        <title>Contact Us | Skewer POS</title>
+        <title>Contact Skewer Restaurant POS | 24/7 Restaurant Software Support</title>
         <meta name="description" content="Get in touch with the Skewer POS team. We're here to help you upgrade your restaurant with the best POS, website builder, and management tools." />
       </Helmet>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">

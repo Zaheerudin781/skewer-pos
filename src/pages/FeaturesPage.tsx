@@ -6,7 +6,7 @@ const FeaturesPage = () => {
   return (
     <div className="pt-24 bg-white min-h-screen pb-32">
       <Helmet>
-        <title>Features | Skewer POS & Restaurant Ecosystem</title>
+        <title>Restaurant POS Features | Kitchen Display, KOT, Inventory & Website Builder | Skewer POS</title>
         <meta name="description" content="Deep dive into the Skewer POS ecosystem. Discover the Mobile-First POS, Kitchen Sync KDS, Zero-Commission Website Builder, and real-time CEO Dashboard." />
       </Helmet>
       
