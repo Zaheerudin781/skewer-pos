@@ -5,11 +5,12 @@ import { Link } from 'react-router-dom';
 
 const Hero = () => {
   const phrases = [
-    "Run your restaurant in the future.",
-    "Automate your kitchen operations.",
-    "Own your customer data.",
-    "Break free from delivery apps.",
-    "Maximize your profit margins."
+    "Cloud POS built for restaurants.",
+    "Kitchen Display & KOT — real-time.",
+    "Online ordering. Zero commission.",
+    "Restaurant accounting, automated.",
+    "Table & floor management, live.",
+    "Your restaurant website, included."
   ];
 
   const [currentPhrase, setCurrentPhrase] = useState(0);
@@ -31,7 +32,7 @@ const Hero = () => {
             className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-600 text-sm font-medium mb-6"
           >
             <Globe className="w-4 h-4" />
-            <span>Includes Free Website Builder</span>
+            <span>Free Restaurant Website + Online Ordering Included</span>
           </motion.div>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -39,7 +40,7 @@ const Hero = () => {
             transition={{ duration: 0.6 }}
             className="text-4xl sm:text-5xl md:text-7xl tracking-tight font-semibold text-[#0c2b47] mb-6 md:mb-8 min-h-[180px] md:min-h-[180px]"
           >
-            Stop paying for the past. <br className="hidden md:block" />
+            The #1 Restaurant POS, KOT & KDS System. <br className="hidden md:block" />
             <div className="relative inline-block w-full h-[120px] sm:h-[80px] md:h-[110px] mt-2 md:mt-4 overflow-visible">
               <AnimatePresence mode="wait">
                 <motion.span
@@ -62,8 +63,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-2xl text-slate-600 mb-8 md:mb-10 max-w-3xl mx-auto leading-relaxed px-4 md:px-0"
           >
-            The ultimate, all-in-one seamless ecosystem for modern restaurants. 
-            No bulky hardware. No hidden fees. Just sheer efficiency.
+            All-in-one restaurant management software — POS billing, Kitchen Display System (KDS), KOT, table management, restaurant accounting, staff management, and commission-free online ordering. One flat price. No hidden fees.
           </motion.p>
           
           <motion.div
