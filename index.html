@@ -239,9 +239,89 @@
     
     <!-- Canonical -->
     <link rel="canonical" href="https://skewer-pos.vercel.app/" />
-  </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Semantic Static Pre-render for SEO Analyzers & Non-JS Search Crawlers (React hydrates dynamically on mount) -->
+      <header>
+        <nav>
+          <a href="/">Restaurant POS System</a>
+          <a href="/features">Features</a>
+          <a href="/pricing">Pricing</a>
+          <a href="/blog">Blog</a>
+          <a href="/about">About Us</a>
+        </nav>
+      </header>
+
+      <main>
+        <article>
+          <h1>Point Of Sale for Restaurant — Restaurant POS System</h1>
+          <p>The #1 cloud-based restaurant management system combining Speed POS billing, Kitchen Order Ticket (KOT), Kitchen Display System (KDS), table management, recipe costing, automated restaurant accounting, and commission-free online food ordering for $8/month.</p>
+
+          <section>
+            <h2>Core Features of Our Cloud Restaurant POS Software</h2>
+            <ul>
+              <li>
+                <h3>Speed Point of Sale (POS) & Order Taking</h3>
+                <p>Lightning-fast order entry for dine-in, takeaway, and delivery on any device (phone, tablet, PC) with offline mode support.</p>
+              </li>
+              <li>
+                <h3>Wireless Kitchen Display System (KDS) & Digital KOT</h3>
+                <p>Real-time order routing from waiters and cashiers directly to kitchen station screens, eliminating lost paper tickets.</p>
+              </li>
+              <li>
+                <h3>Free Restaurant Website Builder & Online Ordering</h3>
+                <p>Launch your custom branded online food ordering website with 0% commissions and QR code digital menus.</p>
+              </li>
+              <li>
+                <h3>Built-In Restaurant Accounting & Automated Bookkeeping</h3>
+                <p>Daily sales reconciliation, general ledger, tax tracking, and automatic profit & loss (P&L) statements.</p>
+              </li>
+              <li>
+                <h3>Smart Table & Room Floor Management</h3>
+                <p>Interactive floor plans with live table occupancy counters, table merging, and order transfer capabilities.</p>
+              </li>
+              <li>
+                <h3>Stock, Recipe & Vendor Management System</h3>
+                <p>Ingredient-level recipe costing, automated stock deductions per sale, and food cost margin analysis.</p>
+              </li>
+              <li>
+                <h3>Staff & Employee Management</h3>
+                <p>Secure role-based PIN access, shift scheduling, and time-tracking for servers, cashiers, and managers.</p>
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Restaurant Business Types We Serve</h2>
+            <ul>
+              <li><h3>Quick Service Restaurants (QSR)</h3></li>
+              <li><h3>Full Service Dining & Casual Dining</h3></li>
+              <li><h3>Cafes & Bakeries</h3></li>
+              <li><h3>Bars & Nightclubs</h3></li>
+              <li><h3>Food Trucks & Pop-up Eateries</h3></li>
+              <li><h3>Ghost Kitchens & Cloud Kitchens</h3></li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Transparent Restaurant POS Pricing — Flat $8/Month</h2>
+            <p>First 100 orders free every month. No hardware lock-in, no percentage transaction cuts, zero setup fees, and 24/7 priority support.</p>
+          </section>
+
+          <section>
+            <h2>Frequently Asked Questions About Skewer Restaurant POS</h2>
+            <h3>What is the best restaurant POS system in Pakistan?</h3>
+            <p>Skewer POS is the top-rated cloud restaurant POS system with built-in KOT, KDS, accounting, and online ordering starting at $8/month.</p>
+            <h3>Do I need special hardware to run Skewer POS?</h3>
+            <p>No. Skewer POS is cloud-based and works on any tablet, iPad, Android phone, or laptop.</p>
+          </section>
+        </article>
+      </main>
+
+      <footer>
+        <p>&copy; 2026 Restaurant POS System (Skewer POS). All rights reserved.</p>
+      </footer>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
