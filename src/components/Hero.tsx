@@ -109,7 +109,7 @@ const Hero = () => {
                       Online
                     </div>
                     <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-slate-200 border border-white shadow-sm overflow-hidden">
-                      <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=facearea&facepad=2&w=100&h=100&q=80" alt="User" width="30" height="30" />
+                      <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=facearea&facepad=2&w=100&h=100&q=80" alt="User" width="30" height="30" loading="lazy" decoding="async" />
                     </div>
                   </div>
                 </div>
@@ -134,7 +134,7 @@ const Hero = () => {
                       ].map((item, i) => (
                         <div key={i} className="bg-white p-2 rounded-sm md:rounded-sm border border-blue-200 shadow-sm flex flex-col items-center text-center cursor-pointer hover:border-blue-300 transition-colors">
                           <div className={`w-full h-20 md:h-28 rounded-sm md:rounded-sm bg-gradient-to-br ${item.color} mb-2 md:mb-3 overflow-hidden p-1 md:p-2`}>
-                            <img src={item.img} alt={item.name} className="w-full h-full object-cover rounded-sm md:rounded-sm shadow-sm" />
+                            <img src={item.img} alt={item.name} className="w-full h-full object-cover rounded-sm md:rounded-sm shadow-sm" width="200" height="112" loading="lazy" decoding="async" />
                           </div>
                           <div className="text-[10px] md:text-xs font-medium text-slate-800 mb-0.5">{item.name}</div>
                           <div className="text-[10px] md:text-xs font-medium text-blue-600">{item.price}</div>

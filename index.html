@@ -241,8 +241,9 @@
     <link rel="canonical" href="https://skewer-pos.vercel.app/" />
   </head>
   <body>
-    <div id="root">
-      <!-- Semantic Static Pre-render for SEO Analyzers & Non-JS Search Crawlers (React hydrates dynamically on mount) -->
+    <div id="root"></div>
+    <noscript>
+      <!-- Semantic Static Pre-render for SEO Analyzers & Non-JS Search Crawlers -->
       <header>
         <nav>
           <a href="/">Restaurant POS System</a>
@@ -322,7 +323,7 @@
       <footer>
         <p>&copy; 2026 Restaurant POS System (Skewer POS). All rights reserved.</p>
       </footer>
-    </div>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
