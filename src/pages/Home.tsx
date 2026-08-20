@@ -12,8 +12,8 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Restaurant POS System | Skewer POS — All-in-One Restaurant Management Software</title>
-        <meta name="description" content="Skewer POS is the ultimate restaurant business management system. All-in-one POS, online ordering, and website maker designed specifically for restaurant operators to eliminate hidden fees." />
+        <title>Restaurant POS System | Cloud POS Software for Restaurants</title>
+        <meta name="description" content="All-in-one cloud Restaurant POS System with KOT, KDS, free website builder, online food ordering, and automated restaurant accounting for just $8/month." />
       </Helmet>
       <Hero />
       <ProblemAgitation />
