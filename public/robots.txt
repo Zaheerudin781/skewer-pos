@@ -53,5 +53,4 @@ User-agent: FacebookBot
 Allow: /
 
 # Sitemaps
-Sitemap: https://skewerpos.com/sitemap.xml
 Sitemap: https://skewer-pos.vercel.app/sitemap.xml
