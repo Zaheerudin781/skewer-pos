@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { Menu, X, ArrowLeft, BookOpen, Sparkles } from 'lucide-react';
+import { Menu, X, ArrowLeft, UtensilsCrossed, ChefHat } from 'lucide-react';
 
 const Header = () => {
   const location = useLocation();
@@ -36,10 +36,10 @@ const Header = () => {
     { name: 'Pricing', path: '/pricing' },
   ];
 
-  // Header background & border styling
+  // Header styling: on blog pages, starts 100% transparent and becomes white glass on scroll
   const headerClass = isBlogPage
     ? isScrolled
-      ? 'bg-slate-950/85 backdrop-blur-md border-b border-white/10 shadow-2xl py-0'
+      ? 'bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-sm py-0'
       : 'bg-transparent border-b border-white/10 py-2'
     : isScrolled
       ? 'bg-white shadow-md py-0 border-b border-slate-100'
@@ -54,14 +54,18 @@ const Header = () => {
           <div className="flex items-center gap-3 md:gap-4">
             {isBlogPage ? (
               <Link to="/blog" className="flex items-center gap-2.5 sm:gap-3 group">
-                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-gradient-to-tr from-amber-500 to-orange-400 flex items-center justify-center text-white shadow-md shadow-orange-500/20 group-hover:scale-105 transition-transform">
-                  <BookOpen className="w-5 h-5" />
+                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-gradient-to-tr from-amber-500 to-orange-500 flex items-center justify-center text-white shadow-md shadow-orange-500/20 group-hover:scale-105 transition-transform flex-shrink-0">
+                  <UtensilsCrossed className="w-5 h-5" />
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-lg sm:text-xl md:text-2xl font-bold tracking-tight text-white group-hover:text-amber-300 transition-colors">
+                  <span className={`text-lg sm:text-xl md:text-2xl font-bold tracking-tight transition-colors ${
+                    isScrolled ? 'text-[#0c2b47] group-hover:text-blue-600' : 'text-white group-hover:text-amber-300'
+                  }`}>
                     Restaurant Business
                   </span>
-                  <span className="text-[10px] uppercase font-semibold tracking-wider text-amber-400/90 -mt-1 hidden sm:block">
+                  <span className={`text-[10px] uppercase font-semibold tracking-wider -mt-1 hidden sm:block ${
+                    isScrolled ? 'text-amber-600' : 'text-amber-400/90'
+                  }`}>
                     Editorial Journal
                   </span>
                 </div>
@@ -84,7 +88,11 @@ const Header = () => {
                   <Link 
                     key={link.name} 
                     to={link.path}
-                    className={`text-sm font-medium transition-colors ${location.pathname === link.path ? 'text-amber-400 font-semibold' : 'text-slate-200 hover:text-white'}`}
+                    className={`text-sm font-medium transition-colors ${
+                      location.pathname === link.path 
+                        ? isScrolled ? 'text-blue-600 font-bold' : 'text-amber-400 font-bold'
+                        : isScrolled ? 'text-slate-600 hover:text-blue-600' : 'text-slate-200 hover:text-white'
+                    }`}
                   >
                     {link.name}
                   </Link>
@@ -106,15 +114,19 @@ const Header = () => {
           {/* Right Action Items */}
           <div className="flex items-center gap-3 sm:gap-4">
             
-            {/* Back to Skewer POS Navigation Button (Prominent on Blog pages) */}
+            {/* Back to Skewer POS Navigation Button */}
             {isBlogPage && (
               <Link
                 to="/"
-                className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-white bg-white/10 hover:bg-white/20 border border-white/20 px-3.5 py-2 rounded-full transition-all backdrop-blur-sm shadow-sm hover:border-white/40 group"
+                className={`inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold px-3.5 py-2 rounded-full transition-all shadow-sm group ${
+                  isScrolled
+                    ? 'bg-blue-50 hover:bg-blue-100 border border-blue-200 text-blue-700'
+                    : 'bg-white/10 hover:bg-white/20 border border-white/25 text-white backdrop-blur-sm'
+                }`}
               >
-                <ArrowLeft className="w-4 h-4 group-hover:-translate-x-0.5 transition-transform text-amber-300" />
-                <span className="hidden xs:inline text-white/80">Back to</span>
-                <span className="text-white font-bold">Skewer POS</span>
+                <ArrowLeft className={`w-4 h-4 group-hover:-translate-x-0.5 transition-transform ${isScrolled ? 'text-blue-600' : 'text-amber-300'}`} />
+                <span className="hidden xs:inline font-normal">Back to</span>
+                <span className="font-bold">Skewer POS</span>
               </Link>
             )}
 
@@ -146,11 +158,7 @@ const Header = () => {
             <a 
               href="https://frontend-blush-seven-e1vr2indno.vercel.app"
               target="_blank" rel="noopener noreferrer"
-              className={`hidden sm:flex items-center justify-center text-sm font-medium px-5 py-2 rounded-sm transition-colors cursor-pointer shadow-sm ${
-                isBlogPage
-                  ? 'bg-blue-600 hover:bg-blue-700 text-white border border-blue-500'
-                  : 'btn-solid btn-solid-blue border border-blue-600 text-white hover:border-blue-700'
-              }`}
+              className="hidden sm:flex items-center justify-center text-sm font-medium px-5 py-2 rounded-sm transition-colors cursor-pointer shadow-sm btn-solid btn-solid-blue border border-blue-600 text-white hover:border-blue-700"
             >
               Get Started
             </a>
@@ -158,7 +166,9 @@ const Header = () => {
             {/* Mobile Menu Toggle */}
             <button 
               className={`md:hidden p-2 focus:outline-none ${
-                isBlogPage ? 'text-white hover:text-amber-300' : 'text-slate-600 hover:text-[#0c2b47]'
+                isBlogPage 
+                  ? isScrolled ? 'text-slate-700 hover:text-blue-600' : 'text-white hover:text-amber-300'
+                  : 'text-slate-600 hover:text-[#0c2b47]'
               }`}
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-label="Toggle navigation menu"
@@ -172,21 +182,17 @@ const Header = () => {
 
       {/* Mobile Navigation Drawer */}
       {isMobileMenuOpen && (
-        <div className={`md:hidden shadow-2xl absolute top-full left-0 w-full py-5 px-5 flex flex-col gap-4 border-b ${
-          isBlogPage 
-            ? 'bg-slate-950/95 backdrop-blur-xl border-white/10 text-white' 
-            : 'bg-white/95 backdrop-blur-md border-slate-200 text-slate-900'
-        }`}>
+        <div className="md:hidden shadow-2xl absolute top-full left-0 w-full py-5 px-5 flex flex-col gap-4 border-b bg-white/98 backdrop-blur-xl border-slate-200 text-slate-900">
           {isBlogPage && (
             <Link
               to="/"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="flex items-center justify-between p-3 rounded-lg bg-blue-600/20 border border-blue-500/30 text-blue-300 font-semibold text-sm mb-1"
+              className="flex items-center justify-between p-3 rounded-lg bg-blue-50 border border-blue-200 text-blue-700 font-semibold text-sm mb-1"
             >
               <span className="flex items-center gap-2">
-                <ArrowLeft className="w-4 h-4 text-amber-400" /> Back to Skewer POS
+                <ArrowLeft className="w-4 h-4 text-blue-600" /> Back to Skewer POS
               </span>
-              <Sparkles className="w-4 h-4 text-amber-400" />
+              <ChefHat className="w-4 h-4 text-amber-500" />
             </Link>
           )}
 
@@ -198,8 +204,8 @@ const Header = () => {
                 onClick={() => setIsMobileMenuOpen(false)}
                 className={`text-base font-medium py-2 px-1 rounded-md transition-colors ${
                   location.pathname === link.path 
-                    ? isBlogPage ? 'text-amber-400 font-bold' : 'text-blue-600 font-bold'
-                    : isBlogPage ? 'text-slate-200 hover:text-white' : 'text-slate-700 hover:text-blue-600'
+                    ? 'text-blue-600 font-bold bg-blue-50/50' 
+                    : 'text-slate-700 hover:text-blue-600'
                 }`}
               >
                 {link.name}
@@ -207,7 +213,7 @@ const Header = () => {
             ))}
           </nav>
           
-          <div className={`h-px my-1 ${isBlogPage ? 'bg-white/10' : 'bg-slate-100'}`}></div>
+          <div className="h-px my-1 bg-slate-100"></div>
           
           <a 
             href="https://wa.me/923466617785" 
@@ -224,9 +230,7 @@ const Header = () => {
             <a 
               href="https://frontend-blush-seven-e1vr2indno.vercel.app"
               target="_blank" rel="noopener noreferrer"
-              className={`w-1/2 flex items-center justify-center text-sm font-medium px-4 py-2.5 rounded-sm transition-colors ${
-                isBlogPage ? 'border border-white/20 text-white bg-white/5' : 'border border-slate-300 text-slate-700'
-              }`}
+              className="w-1/2 flex items-center justify-center text-sm font-medium px-4 py-2.5 rounded-sm transition-colors border border-slate-300 text-slate-700 bg-slate-50"
             >
               Log In
             </a>
@@ -245,3 +249,4 @@ const Header = () => {
 };
 
 export default Header;
+
