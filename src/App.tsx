@@ -4,6 +4,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import WhatsAppButton from './components/WhatsAppButton';
 import Home from './pages/Home';
 
 // Lazy-load secondary subpages so they don't bloat the main homepage payload
@@ -26,7 +27,7 @@ function App() {
     <HelmetProvider>
       <Router>
         <ScrollToTop />
-        <div className="min-h-screen bg-white font-sans text-slate-900 selection:bg-blue-200 flex flex-col">
+        <div className="min-h-screen bg-white font-sans text-slate-900 selection:bg-blue-200 flex flex-col relative">
           <Header />
           <main className="flex-grow">
             <Suspense fallback={<PageLoader />}>
@@ -42,6 +43,7 @@ function App() {
             </Suspense>
           </main>
           <Footer />
+          <WhatsAppButton />
         </div>
       </Router>
     </HelmetProvider>
@@ -49,3 +51,4 @@ function App() {
 }
 
 export default App;
+
