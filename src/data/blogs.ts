@@ -27,6 +27,22 @@ import { post12 } from './posts/post12';
 import { post13 } from './posts/post13';
 import { post14 } from './posts/post14';
 import { post15 } from './posts/post15';
+import { post16 } from './posts/post16';
+import { post17 } from './posts/post17';
+import { post18 } from './posts/post18';
+import { post19 } from './posts/post19';
+import { post20 } from './posts/post20';
+import { post21 } from './posts/post21';
+import { post22 } from './posts/post22';
+import { post23 } from './posts/post23';
+import { post24 } from './posts/post24';
+import { post25 } from './posts/post25';
+import { post26 } from './posts/post26';
+import { post27 } from './posts/post27';
+import { post28 } from './posts/post28';
+import { post29 } from './posts/post29';
+import { post30 } from './posts/post30';
+
 
 export const blogs: BlogPost[] = [
   {
@@ -156,5 +172,20 @@ export const blogs: BlogPost[] = [
   post12,
   post13,
   post14,
-  post15
+  post15,
+  post16,
+  post17,
+  post18,
+  post19,
+  post20,
+  post21,
+  post22,
+  post23,
+  post24,
+  post25,
+  post26,
+  post27,
+  post28,
+  post29,
+  post30
 ];
