@@ -1,4 +1,10 @@
-# Standard Web Crawlers
+# ==============================================================================
+# SKEWER POS ROBOTS.TXT
+# https://skewer-pos.vercel.app/
+# All Search Engines, Web Crawlers & AI Agents Allowed
+# ==============================================================================
+
+# Standard Web Search Engines (Google, Bing, Yahoo, DuckDuckGo, Yandex, Baidu, Apple)
 User-agent: *
 Allow: /
 Disallow: /admin/
@@ -6,7 +12,34 @@ Disallow: /api/
 Disallow: /checkout/
 Disallow: /dashboard/
 
-# AI Crawlers & LLMs (Full Search & Retrieval Allowed)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# AI Search Engines & LLM Web Retrieval Crawlers
 User-agent: GPTBot
 Allow: /
 
@@ -28,10 +61,10 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-User-agent: GoogleOther
+User-agent: Google-Extended
 Allow: /
 
-User-agent: Google-Extended
+User-agent: GoogleOther
 Allow: /
 
 User-agent: Gemini-Bot
@@ -46,11 +79,18 @@ Allow: /
 User-agent: meta-externalagent
 Allow: /
 
-User-agent: OmgiliBot
+User-agent: FacebookBot
 Allow: /
 
-User-agent: FacebookBot
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: OmgiliBot
 Allow: /
 
 # Sitemaps
 Sitemap: https://skewer-pos.vercel.app/sitemap.xml
+

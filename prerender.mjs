@@ -69,8 +69,8 @@ const STATIC_ROUTES = [
 
 const BASE_URL = 'https://skewer-pos.vercel.app';
 
-// ─── Helper: patch <head> in base HTML ────────────────────────────────────────
-function patchHead(baseHtml, { title, description, canonical, ogTitle, ogDescription }) {
+// ─── Helper: patch HTML for each route ────────────────────────────────────────
+function patchHtml(baseHtml, { title, description, canonical, ogTitle, ogDescription, isBlog, slug }) {
   let html = baseHtml;
 
   // Replace <title>
@@ -118,11 +118,71 @@ function patchHead(baseHtml, { title, description, canonical, ogTitle, ogDescrip
     `<meta property="og:url" content="${canonical}"`
   );
 
+  // If blog post, inject BlogPosting Schema.org JSON-LD and custom noscript article
+  if (isBlog) {
+    const blogSchema = `
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "${canonical}"
+      },
+      "headline": "${escJson(title)}",
+      "description": "${escJson(description)}",
+      "image": "https://skewer-pos.vercel.app/images/screenshots/pos_orders_kds.png",
+      "author": {
+        "@type": "Person",
+        "name": "Zaheerudin Hamza",
+        "jobTitle": "CEO & Restaurant Operator"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Skewer POS",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://skewer-pos.vercel.app/logo.png"
+        }
+      },
+      "datePublished": "2026-08-26",
+      "dateModified": "2026-08-26"
+    }
+    </script>
+    `;
+
+    html = html.replace('</head>', `${blogSchema}\n  </head>`);
+
+    // Inject semantic article in <noscript>
+    const noscriptContent = `
+    <noscript>
+      <header>
+        <nav>
+          <a href="/">← Back to Skewer POS</a> | <a href="/blog">All Restaurant Business Articles</a>
+        </nav>
+      </header>
+      <main>
+        <article>
+          <h1>${escHtml(title)}</h1>
+          <p class="lead">${escHtml(description)}</p>
+          <p>Published by <strong>Zaheerudin Hamza</strong> &bull; Skewer Restaurant POS</p>
+          <p>Skewer POS is the all-in-one cloud restaurant POS and restaurant management platform offering touch billing, digital KOT, kitchen display systems (KDS), and commission-free online ordering for $8/month.</p>
+        </article>
+      </main>
+    </noscript>`;
+
+    html = html.replace(/<noscript>[\s\S]*?<\/noscript>/, noscriptContent);
+  }
+
   return html;
 }
 
 function escHtml(str) {
-  return str.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  return (str || '').replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+function escJson(str) {
+  return (str || '').replace(/\\/g, '\\\\').replace(/"/g, '\\"').replace(/\n/g, ' ');
 }
 
 // ─── Main ─────────────────────────────────────────────────────────────────────
@@ -135,7 +195,7 @@ async function main() {
     const routePath = route.path === '/' ? '' : route.path;
     const dir = path.join(DIST, ...routePath.split('/').filter(Boolean));
     const canonical = `${BASE_URL}${route.path === '/' ? '/' : route.path}`;
-    const patched = patchHead(baseHtml, { ...route, canonical });
+    const patched = patchHtml(baseHtml, { ...route, canonical, isBlog: false });
 
     if (routePath) {
       fs.mkdirSync(dir, { recursive: true });
@@ -153,10 +213,12 @@ async function main() {
     const dir = path.join(DIST, 'blog', post.slug);
     fs.mkdirSync(dir, { recursive: true });
     const canonical = `${BASE_URL}/blog/${post.slug}`;
-    const patched = patchHead(baseHtml, {
+    const patched = patchHtml(baseHtml, {
       title: `${post.title} | Skewer Restaurant POS`,
       description: post.description,
       canonical,
+      isBlog: true,
+      slug: post.slug,
     });
     fs.writeFileSync(path.join(dir, 'index.html'), patched, 'utf-8');
     console.log(`✓ ${canonical}`);
@@ -167,3 +229,4 @@ async function main() {
 }
 
 main().catch(err => { console.error(err); process.exit(1); });
+
