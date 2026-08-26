@@ -15,27 +15,25 @@ const PricingPage = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-50 border border-red-200 text-red-600 text-sm font-medium mb-6"
+          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-sm font-semibold mb-6 shadow-sm"
         >
-          <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
-          <span>War on Hidden Fees</span>
+          <span>Best Free POS System for Small Restaurant — First 100 Orders Free</span>
         </motion.div>
         <motion.h1 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="text-5xl tracking-tight md:text-7xl font-semibold text-[#0c2b47] mb-8"
+          className="text-4xl sm:text-5xl md:text-7xl font-bold text-[#0c2b47] mb-8 tracking-tight"
         >
-          Stop paying the <span className="text-red-500">30%</span> tax.<br />
-          Keep your margins.
+          Low Cost Restaurant Management Software & <span className="text-blue-600">Cloud POS ($8/Mo)</span>
         </motion.h1>
         <motion.p 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="text-xl md:text-2xl text-slate-600 max-w-3xl mx-auto leading-relaxed mb-12"
+          className="text-xl md:text-2xl text-slate-600 max-w-4xl mx-auto leading-relaxed mb-12"
         >
-          Legacy POS systems and delivery apps drain your profits with percentage cuts, hardware fees, and forced processing contracts. We do one flat fee.
+          Stop paying 30% delivery commissions and $3,000 hardware lock-ins. Get full cloud billing, digital KOT kitchen display, table management, and your own online ordering website for a flat $8/month.
         </motion.p>
       </div>
 

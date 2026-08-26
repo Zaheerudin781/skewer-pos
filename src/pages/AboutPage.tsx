@@ -10,24 +10,27 @@ const AboutPage = () => {
       </Helmet>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="text-center max-w-3xl mx-auto mb-20">
+        <div className="text-center max-w-4xl mx-auto mb-20">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-sm font-semibold mb-6 shadow-sm">
+            <span>The Skewer POS Story</span>
+          </div>
           <fmotion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl tracking-tight md:text-6xl font-semibold text-[#0c2b47] tracking-tight mb-6"
+            className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#0c2b47] tracking-tight mb-6"
           >
-            Built for Restaurants, <br/>
+            Skewer Restaurant POS (Point of Sale) & <br/>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">
-              Not for Investors
+              (RMS) Restaurant Management System
             </span>
           </fmotion.h1>
           <fmotion.p 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-xl text-slate-600"
+            className="text-xl text-slate-600 leading-relaxed max-w-3xl mx-auto"
           >
-            Skewer POS was born out of frustration with predatory legacy systems that trap restaurants in bad contracts and charge hidden fees.
+            Built by real restaurant operators to end predatory 30% delivery aggregator commissions and clunky $3,000 legacy hardware lock-ins with a flat $8/month cloud platform.
           </fmotion.p>
         </div>
 

@@ -3,34 +3,34 @@ import { motion } from 'framer-motion';
 const RestaurantTypes = () => {
   const types = [
     {
-      title: 'Quick Service (QSR)',
-      desc: 'Speed up your counter service, manage heavy lines with ease, and automate your kitchen routing for maximum throughput.',
+      title: 'Fast Food QSR Point of Sale System',
+      desc: 'Shave 45 seconds off counter transactions, build combo meals with one tap, and route tickets instantly to kitchen screen order displays for cooks.',
       img: 'https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80'
     },
     {
-      title: 'Full Service Dining',
-      desc: 'Seamlessly manage complex floor plans, multi-course coursing, split checks, and elevate your guest experience.',
+      title: 'Fine Dining Restaurant POS System',
+      desc: 'Seamlessly manage complex dining room floor plans, multi-course pacing (Hold/Fire), seat-number ordering, and VIP guest preferences.',
       img: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=600&q=80'
     },
     {
-      title: 'Bars & Nightclubs',
-      desc: 'Keep the drinks flowing with lightning-fast tab management, quick reordering, and offline-first reliability during peak hours.',
+      title: 'Bar and Pub POS System',
+      desc: 'Keep high-tempo drink lines moving with fast open bar tabs, two-tap drink modifiers, group check splitting, and bottle inventory shrinkage control.',
       img: 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=600&q=80'
     },
     {
-      title: 'Cafes & Bakeries',
-      desc: 'Streamline your morning rush, handle complex modifiers perfectly, and keep your inventory synced in real-time.',
+      title: 'Cafe and Coffee Shop Billing Software',
+      desc: 'Master the 8:00 AM rush with rapid espresso and syrup modifiers, bakery stock depletion alerts, and customer mobile pre-orders.',
       img: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80'
     },
     {
-      title: 'Food Trucks & Pop-ups',
-      desc: 'Mobile, offline-ready POS that works anywhere. Compact hardware and lightning-fast processing for massive lines.',
+      title: 'Food Truck POS and Billing Software',
+      desc: 'Lightweight Android restaurant billing app with printer support. Runs offline with zero internet dependency and pairs with mobile Bluetooth printers.',
       img: 'https://images.unsplash.com/photo-1565123409695-7b5ef63a2efb?auto=format&fit=crop&w=600&q=80'
     },
     {
-      title: 'Ghost Kitchens',
-      desc: 'Maximize delivery volume, manage multiple virtual brands, and aggregate orders seamlessly on one KDS screen.',
-      img: 'https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=600&q=80'
+      title: 'Pizza Shop POS and Delivery System',
+      desc: 'Handle complex half-and-half toppings, size matrixes, crust modifiers, and delivery driver dispatching connected to online menu ordering.',
+      img: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80'
     }
   ];
 
@@ -42,9 +42,9 @@ const RestaurantTypes = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-medium text-slate-800 mb-6 tracking-tight"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-6 tracking-tight"
           >
-            Restaurant Types We Serve
+            Specialized Point of Sale (POS) Solutions for Every Food Business
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -53,7 +53,7 @@ const RestaurantTypes = () => {
             transition={{ delay: 0.1 }}
             className="text-lg md:text-xl text-slate-600 leading-relaxed"
           >
-            Skewer POS offers total control with an end-to-end workflow tailored for your entire restaurant business in one place.
+            Skewer POS delivers customized operational workflows tailored specifically for your food and beverage business model.
           </motion.p>
         </div>
 

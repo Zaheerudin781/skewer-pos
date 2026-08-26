@@ -6,15 +6,21 @@ const Pricing = () => {
     <section className="py-24 bg-slate-50 border-t border-blue-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-4xl mx-auto mb-16">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-bold uppercase tracking-wider mb-4">
+            <span>Low Cost Restaurant Management Software</span>
+          </div>
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl tracking-tight font-medium text-[#0c2b47] mb-6"
+            className="text-3xl sm:text-4xl md:text-5xl tracking-tight font-bold text-[#0c2b47] mb-4"
           >
-            Honest pricing that actually scales with you.
+            Best Free POS System for Small Restaurant & Growing Chains ($8/Mo)
           </motion.h2>
+          <p className="text-slate-600 text-lg">
+            Flat pricing with zero commission fees, no expensive hardware bundles, and no locked payment processing contracts.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">

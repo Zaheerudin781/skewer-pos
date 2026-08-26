@@ -23,16 +23,16 @@ const ProblemAgitation = () => {
   return (
     <section className="py-24 bg-slate-50 border-y border-blue-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-4xl mx-auto mb-16">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
-            className="text-3xl tracking-tight md:text-4xl tracking-tight font-medium text-[#0c2b47] mb-6"
+            className="text-3xl sm:text-4xl md:text-5xl tracking-tight font-bold text-[#0c2b47] mb-6"
           >
-            You are being held hostage by your own technology. <br className="hidden md:block" />
-            <span className="text-slate-500">It's time to break free.</span>
+            Tired of Expensive Legacy Hardware & Predatory 30% Delivery Fees? <br className="hidden md:block" />
+            <span className="text-blue-600 font-semibold">It's time to upgrade to Skewer Cloud POS.</span>
           </motion.h2>
         </div>
 

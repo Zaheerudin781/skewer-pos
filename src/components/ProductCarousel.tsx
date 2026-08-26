@@ -6,53 +6,53 @@ const ProductCarousel = () => {
   const [items, setItems] = useState([
     {
       id: 'website',
-      title: 'Zero-Commission Website',
-      desc: 'Launch a beautifully branded online ordering site in 5 minutes. Keep 100% of your revenue without relying on third-party delivery apps.',
+      title: 'Commission Free Online Ordering System',
+      desc: 'Launch a beautifully branded white label restaurant ordering website builder in 5 minutes. Keep 100% of your delivery revenue at 0% commission.',
       icon: <Globe className="w-6 h-6" />,
       bg: 'bg-[#fff8e7]',
       accent: 'text-amber-600',
       mockup: (
-        <div className="w-full h-full rounded-t-xl overflow-hidden shadow-2xl border-t border-x border-amber-200/50 bg-white">
-          <img src="/images/website.jpg" alt="Website Builder UI" loading="lazy" className="w-full h-full object-cover object-top" />
+        <div className="w-full h-full rounded-t-2xl overflow-hidden shadow-2xl border-t border-x border-amber-200/50 bg-white">
+          <img src="/images/screenshots/online_ordering_storefront.png" alt="Commission free online ordering system for restaurants" loading="lazy" className="w-full h-full object-cover object-top" />
         </div>
       )
     },
     {
       id: 'pos',
-      title: 'Mobile-First POS',
-      desc: 'Lightning-fast order entry at the table. Never lose a ticket, handle complex modifiers with ease, and work flawlessly even offline.',
+      title: 'Touch Screen POS System for Restaurant',
+      desc: 'Lightning-fast cloud based restaurant pos system and tablet billing. Take tableside orders, manage modifiers with two taps, and work offline without internet.',
       icon: <Smartphone className="w-6 h-6" />,
       bg: 'bg-[#e6f7ff]',
       accent: 'text-sky-600',
       mockup: (
-        <div className="w-full h-full rounded-t-xl overflow-hidden shadow-2xl border-t border-x border-sky-200/50 bg-white">
-          <img src="/images/pos.jpg" alt="Mobile POS UI" loading="lazy" className="w-full h-full object-cover object-top" />
+        <div className="w-full h-full rounded-t-2xl overflow-hidden shadow-2xl border-t border-x border-sky-200/50 bg-white">
+          <img src="/images/screenshots/touch_billing_screen.png" alt="Touch screen POS system for restaurant food billing software" loading="lazy" className="w-full h-full object-cover object-top" />
         </div>
       )
     },
     {
-      id: 'accounting',
-      title: 'Automated Bookkeeping',
-      desc: 'Your daily sales, taxes, labor costs, and processing fees flow directly into our built-in general ledger at the close of every business day.',
+      id: 'kds',
+      title: 'Kitchen Order Display System (KDS)',
+      desc: 'Digital kitchen order ticket (KOT) software eliminating paper tickets. Color-coded ticket timers and real-time station routing for cooks.',
       icon: <Calculator className="w-6 h-6" />,
       bg: 'bg-[#f0fdf4]',
       accent: 'text-green-600',
       mockup: (
-        <div className="w-full h-full rounded-t-xl overflow-hidden shadow-2xl border-t border-x border-green-200/50 bg-white">
-          <img src="/images/accounting.jpg" alt="Accounting Ledger UI" loading="lazy" className="w-full h-full object-cover object-top" />
+        <div className="w-full h-full rounded-t-2xl overflow-hidden shadow-2xl border-t border-x border-green-200/50 bg-white">
+          <img src="/images/screenshots/pos_orders_kds.png" alt="Kitchen order display system KDS for restaurant cook screens" loading="lazy" className="w-full h-full object-cover object-top" />
         </div>
       )
     },
     {
-      id: 'staff',
-      title: 'Staff Management',
-      desc: 'Secure role-based PIN access, automated time-tracking, and shift scheduling to keep your team running smoothly and prevent theft.',
+      id: 'tables',
+      title: 'Dynamic Floor & Table Management System',
+      desc: 'Visual room layouts (Bar, Family Hall, Main Room, Patio) tracking real-time guest seating, open bar tabs, and fast table turnover.',
       icon: <Users className="w-6 h-6" />,
       bg: 'bg-[#f3e8ff]',
       accent: 'text-purple-600',
       mockup: (
-        <div className="w-full h-full rounded-t-xl overflow-hidden shadow-2xl border-t border-x border-purple-200/50 bg-white">
-          <img src="/images/staff.jpg" alt="Staff Management UI" loading="lazy" className="w-full h-full object-cover object-top" />
+        <div className="w-full h-full rounded-t-2xl overflow-hidden shadow-2xl border-t border-x border-purple-200/50 bg-white">
+          <img src="/images/screenshots/table_floor_management.png" alt="Table management floor plan system for restaurant table service" loading="lazy" className="w-full h-full object-cover object-top" />
         </div>
       )
     }
