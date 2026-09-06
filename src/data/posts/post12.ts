@@ -76,7 +76,7 @@ export const post12: BlogPost = {
     <h2>How to Set Up Commission-Free Online Ordering on Skewer POS: 3 Steps</h2>
 
     <h3>Step 1: Create Your Skewer Account & Build Your Menu</h3>
-    <p>Sign up at <strong>skewer-pos.vercel.app</strong> and access the merchant dashboard. Navigate to the Menu Builder tab and add your categories, items, modifiers, and pricing. All items automatically sync to your digital ordering website in real time.</p>
+    <p>Sign up at <strong>skewerpos.com</strong> and access the merchant dashboard. Navigate to the Menu Builder tab and add your categories, items, modifiers, and pricing. All items automatically sync to your digital ordering website in real time.</p>
     <p><em>[SCREENSHOT BRIEF: Insert screenshot of the Skewer POS merchant dashboard Menu Builder interface, showing item categories on the left panel and item edit fields on the right — including fields for name, description, price, and photo upload.]</em></p>
 
     <h3>Step 2: Activate Your Free Ordering Website</h3>

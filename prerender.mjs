@@ -67,7 +67,7 @@ const STATIC_ROUTES = [
   { path: '/contact',   title: 'Contact Skewer Restaurant POS | Get Support',                      description: 'Contact the Skewer Restaurant POS team via WhatsApp, email, or our website for sales, support, and partnership inquiries.' },
 ];
 
-const BASE_URL = 'https://skewer-pos.vercel.app';
+const BASE_URL = 'https://skewerpos.com';
 
 // ─── Helper: patch HTML for each route ────────────────────────────────────────
 function patchHtml(baseHtml, { title, description, canonical, ogTitle, ogDescription, isBlog, slug }) {
@@ -131,7 +131,7 @@ function patchHtml(baseHtml, { title, description, canonical, ogTitle, ogDescrip
       },
       "headline": "${escJson(title)}",
       "description": "${escJson(description)}",
-      "image": "https://skewer-pos.vercel.app/images/screenshots/pos_orders_kds.png",
+      "image": "https://skewerpos.com/images/screenshots/pos_orders_kds.png",
       "author": {
         "@type": "Person",
         "name": "Zaheerudin Hamza",
@@ -142,11 +142,11 @@ function patchHtml(baseHtml, { title, description, canonical, ogTitle, ogDescrip
         "name": "Skewer POS",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://skewer-pos.vercel.app/logo.png"
+          "url": "https://skewerpos.com/logo.png"
         }
       },
       "datePublished": "2026-08-26",
-      "dateModified": "2026-08-26"
+      "dateModified": "2026-09-06"
     }
     </script>
     `;

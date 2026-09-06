@@ -53,7 +53,7 @@ const WebsiteBuilder = () => {
                      <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
                      <div className="w-3 h-3 rounded-full bg-green-400"></div>
                    </div>
-                   <div className="ml-4 flex-1 h-6 bg-white/10 rounded-full flex items-center px-3 text-xs text-slate-300 font-medium">skewer-pos.vercel.app/order</div>
+                   <div className="ml-4 flex-1 h-6 bg-white/10 rounded-full flex items-center px-3 text-xs text-slate-300 font-medium">skewerpos.com/order</div>
                  </div>
                  <div className="flex-1 w-full h-full bg-slate-900 overflow-hidden">
                    <img 

@@ -1,6 +1,6 @@
 # ==============================================================================
 # SKEWER POS ROBOTS.TXT
-# https://skewer-pos.vercel.app/
+# https://skewerpos.com/
 # All Search Engines, Web Crawlers & AI Agents Allowed
 # ==============================================================================
 
@@ -92,5 +92,6 @@ User-agent: OmgiliBot
 Allow: /
 
 # Sitemaps
-Sitemap: https://skewer-pos.vercel.app/sitemap.xml
+Sitemap: https://skewerpos.com/sitemap.xml
+
 
