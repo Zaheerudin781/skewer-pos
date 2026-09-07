@@ -200,7 +200,7 @@ const BlogPage = () => {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a 
-                href="https://frontend-blush-seven-e1vr2indno.vercel.app" 
+                href="https://app.skewerpos.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto px-8 py-3.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm transition-all shadow-lg shadow-blue-600/30"

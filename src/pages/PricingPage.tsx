@@ -221,7 +221,7 @@ const PricingPage = () => {
                 Your first 100 orders every single month are completely free. Start using the ecosystem today, risk-free.
               </p>
               <a 
-                href="https://frontend-blush-seven-e1vr2indno.vercel.app" 
+                href="https://app.skewerpos.com" 
                 target="_blank" rel="noopener noreferrer"
                 className="inline-flex items-center justify-center btn-solid btn-solid-blue text-white font-medium px-8 py-4 rounded-sm text-lg transition-colors shadow-xl hover:shadow-blue-500/20 group"
               >

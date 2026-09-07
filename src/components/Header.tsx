@@ -145,7 +145,7 @@ const Header = () => {
                   WhatsApp
                 </a>
                 <a 
-                  href="https://frontend-blush-seven-e1vr2indno.vercel.app"
+                  href="https://app.skewerpos.com"
                   target="_blank" rel="noopener noreferrer"
                   className="hidden md:inline-flex text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors px-3 py-2"
                 >
@@ -156,7 +156,7 @@ const Header = () => {
 
             {/* Main Action CTA - Visible and Identical on Mobile & Desktop */}
             <a 
-              href="https://frontend-blush-seven-e1vr2indno.vercel.app"
+              href="https://app.skewerpos.com"
               target="_blank" rel="noopener noreferrer"
               className="flex items-center justify-center text-xs sm:text-sm font-semibold px-3 sm:px-5 py-2 rounded-md transition-all cursor-pointer shadow-md bg-blue-600 hover:bg-blue-700 text-white border border-blue-600 hover:border-blue-700 active:scale-95"
             >
@@ -228,14 +228,14 @@ const Header = () => {
           </a>
           <div className="flex gap-2 w-full mt-1">
             <a 
-              href="https://frontend-blush-seven-e1vr2indno.vercel.app"
+              href="https://app.skewerpos.com"
               target="_blank" rel="noopener noreferrer"
               className="w-1/2 flex items-center justify-center text-sm font-semibold px-4 py-2.5 rounded-md transition-colors border border-slate-300 text-slate-700 bg-slate-50"
             >
               Log In
             </a>
             <a 
-              href="https://frontend-blush-seven-e1vr2indno.vercel.app"
+              href="https://app.skewerpos.com"
               target="_blank" rel="noopener noreferrer"
               className="w-1/2 flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2.5 rounded-md transition-all shadow-md active:scale-95"
             >

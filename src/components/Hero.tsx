@@ -73,7 +73,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
-            <a href="https://frontend-blush-seven-e1vr2indno.vercel.app" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center border border-blue-600 bg-blue-600 text-white hover:bg-blue-700 font-semibold px-7 py-3 rounded-md text-sm transition-all shadow-lg shadow-blue-600/30 w-full sm:w-auto">
+            <a href="https://app.skewerpos.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center border border-blue-600 bg-blue-600 text-white hover:bg-blue-700 font-semibold px-7 py-3 rounded-md text-sm transition-all shadow-lg shadow-blue-600/30 w-full sm:w-auto">
               Start 100 Free Orders Now
             </a>
             <Link to="/pricing" className="border border-slate-300 hover:border-slate-400 bg-white text-slate-800 font-semibold px-7 py-3 rounded-md text-sm shadow-sm transition-all w-full sm:w-auto flex items-center justify-center">

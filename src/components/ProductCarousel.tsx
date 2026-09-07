@@ -114,7 +114,7 @@ const ProductCarousel = () => {
                     </div>
                     <h3 className="text-3xl md:text-4xl font-semibold text-slate-900 mb-4">{item.title}</h3>
                     <p className="text-lg text-slate-700 leading-relaxed mb-6">{item.desc}</p>
-                    <a href="https://frontend-blush-seven-e1vr2indno.vercel.app" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-slate-900 text-white px-6 py-3 rounded-full font-medium hover:bg-slate-800 transition-colors w-fit">
+                    <a href="https://app.skewerpos.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-slate-900 text-white px-6 py-3 rounded-full font-medium hover:bg-slate-800 transition-colors w-fit">
                       Get Started <ChevronRight className="w-4 h-4" />
                     </a>
                   </div>

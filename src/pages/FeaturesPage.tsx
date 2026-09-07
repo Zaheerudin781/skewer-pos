@@ -320,7 +320,7 @@ const FeaturesPage = () => {
             Every transaction is end-to-end encrypted. Role-based PIN access ensures staff only see what they need to. Our offline-first syncing means if the WiFi drops, your restaurant continues billing, printing receipts, and sending kitchen chits without missing a single order.
           </p>
           <a 
-            href="https://frontend-blush-seven-e1vr2indno.vercel.app" 
+            href="https://app.skewerpos.com" 
             target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-500 text-white font-bold px-8 py-4 rounded-lg text-base transition-all shadow-lg shadow-blue-600/30"
           >
