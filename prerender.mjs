@@ -139,7 +139,7 @@ function patchHtml(baseHtml, { title, description, canonical, ogTitle, ogDescrip
       },
       "publisher": {
         "@type": "Organization",
-        "name": "Skewer POS",
+        "name": "Restaurant POS",
         "logo": {
           "@type": "ImageObject",
           "url": "https://skewerpos.com/logo.png"

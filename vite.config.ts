@@ -34,8 +34,8 @@ export default defineConfig({
         ],
       },
       manifest: {
-        name: 'Skewer POS',
-        short_name: 'Skewer',
+        name: 'Restaurant POS',
+        short_name: 'Restaurant POS',
         description: 'All-in-one Restaurant POS, KDS, KOT & Accounting System',
         theme_color: '#2563eb',
         background_color: '#ffffff',
