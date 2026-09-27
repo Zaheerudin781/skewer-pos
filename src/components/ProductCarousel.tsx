@@ -105,17 +105,17 @@ const ProductCarousel = () => {
                   }}
                   exit={{ opacity: 0, scale: 0.8, x: -100 }}
                   transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                  className={`flex-shrink-0 w-[85vw] md:w-[600px] lg:w-[800px] h-[55vh] min-h-[500px] max-h-[700px] rounded-[2.5rem] ${item.bg} px-8 pt-8 md:px-12 md:pt-12 flex flex-col relative overflow-hidden shadow-sm`}
+                  className={`flex-shrink-0 w-[85vw] md:w-[600px] lg:w-[800px] h-[55vh] min-h-[500px] max-h-[700px] rounded-3xl ${item.bg} px-8 pt-8 md:px-12 md:pt-12 flex flex-col relative overflow-hidden shadow-sm`}
                 >
                   {/* Content Top Half */}
                   <div className="max-w-xl relative z-10 shrink-0">
                     <div className={`w-12 h-12 rounded-full bg-white flex items-center justify-center mb-6 shadow-sm ${item.accent}`}>
                       {item.icon}
                     </div>
-                    <h3 className="text-3xl md:text-4xl font-semibold text-slate-900 mb-4">{item.title}</h3>
-                    <p className="text-lg text-slate-700 leading-relaxed mb-6">{item.desc}</p>
-                    <a href="https://app.skewerpos.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-slate-900 text-white px-6 py-3 rounded-full font-medium hover:bg-slate-800 transition-colors w-fit">
-                      Get Started <ChevronRight className="w-4 h-4" />
+                    <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 mb-3">{item.title}</h3>
+                    <p className="text-base sm:text-lg text-slate-700 leading-relaxed mb-6">{item.desc}</p>
+                    <a href="https://app.skewerpos.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white px-7 py-3 rounded-lg font-semibold text-sm transition-all shadow-md shadow-blue-600/20 w-fit">
+                      Get Started
                     </a>
                   </div>
                   
@@ -131,20 +131,31 @@ const ProductCarousel = () => {
           </div>
 
           {/* Navigation Controls */}
-          <div className="flex justify-center md:justify-end gap-3 mt-2 pr-4">
+          <div className="flex items-center justify-center gap-4 mt-6">
             <button 
               onClick={handlePrev}
               aria-label="Previous slide"
-              className="w-12 h-12 rounded-full bg-[#0c2b47] text-white flex items-center justify-center hover:bg-slate-800 transition-colors shadow-lg"
+              className="w-11 h-11 rounded-full bg-white border border-slate-200 text-slate-700 flex items-center justify-center hover:bg-slate-50 transition-all shadow-md active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
-              <ChevronLeft className="w-6 h-6" />
+              <ChevronLeft className="w-5 h-5" aria-hidden="true" />
             </button>
+
+            {/* Visual Slide Dots */}
+            <div className="flex items-center gap-1.5" aria-hidden="true">
+              {items.map((it, idx) => (
+                <span 
+                  key={it.id} 
+                  className={`h-2 rounded-full transition-all duration-300 ${idx === 0 ? 'w-6 bg-blue-600' : 'w-2 bg-slate-300'}`} 
+                />
+              ))}
+            </div>
+
             <button 
               onClick={handleNext}
               aria-label="Next slide"
-              className="w-12 h-12 rounded-full bg-[#0c2b47] text-white flex items-center justify-center hover:bg-slate-800 transition-colors shadow-lg"
+              className="w-11 h-11 rounded-full bg-white border border-slate-200 text-slate-700 flex items-center justify-center hover:bg-slate-50 transition-all shadow-md active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
-              <ChevronRight className="w-6 h-6" />
+              <ChevronRight className="w-5 h-5" aria-hidden="true" />
             </button>
           </div>
         </div>

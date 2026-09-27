@@ -7,7 +7,7 @@ const Pricing = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center max-w-4xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-bold uppercase tracking-wider mb-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-semibold mb-4">
             <span>Low Cost Restaurant Management Software</span>
           </div>
           <motion.h2 
@@ -18,12 +18,12 @@ const Pricing = () => {
           >
             Best Free POS System for Small Restaurant & Growing Chains ($8/Mo)
           </motion.h2>
-          <p className="text-slate-600 text-lg">
+          <p className="text-slate-600 text-base sm:text-lg max-w-3xl mx-auto">
             Flat pricing with zero commission fees, no expensive hardware bundles, and no locked payment processing contracts.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12 items-stretch">
           
           {/* Them */}
           <motion.div 
@@ -31,25 +31,42 @@ const Pricing = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-white rounded-md p-8 md:p-10 border border-blue-200 opacity-60 grayscale hover:grayscale-0 transition-all duration-500"
+            className="bg-white rounded-2xl p-8 md:p-10 border border-blue-200 opacity-75 hover:opacity-100 transition-all duration-300 h-full flex flex-col justify-between shadow-sm"
           >
-            <h3 className="text-2xl font-medium text-slate-500 mb-2">Them</h3>
-            <div className="text-4xl tracking-tight font-medium text-slate-400 mb-8">$99<span className="text-xl font-normal text-slate-400">/mo</span></div>
+            <div>
+              <div className="inline-block px-3 py-1 bg-slate-100 rounded-full text-xs font-semibold text-slate-500 mb-4">
+                Traditional Legacy POS
+              </div>
+              <h3 className="text-2xl font-bold text-slate-700 mb-2">Them</h3>
+              <div className="text-4xl tracking-tight font-medium text-slate-400 mb-8">$99<span className="text-xl font-normal text-slate-400">/mo</span></div>
+              
+              <ul className="space-y-4">
+                <li className="flex items-center gap-3 text-slate-500 line-through">
+                  <span className="w-1.5 h-1.5 bg-slate-300 rounded-full" aria-hidden="true"></span>
+                  + Expensive hardware bundles
+                </li>
+                <li className="flex items-center gap-3 text-slate-500 line-through">
+                  <span className="w-1.5 h-1.5 bg-slate-300 rounded-full" aria-hidden="true"></span>
+                  + Setup & training fees
+                </li>
+                <li className="flex items-center gap-3 text-slate-500 line-through">
+                  <span className="w-1.5 h-1.5 bg-slate-300 rounded-full" aria-hidden="true"></span>
+                  + Transaction percentage cuts
+                </li>
+                <li className="flex items-center gap-3 text-slate-500 line-through">
+                  <span className="w-1.5 h-1.5 bg-slate-300 rounded-full" aria-hidden="true"></span>
+                  + Locked 2-3 year contracts
+                </li>
+                <li className="flex items-center gap-3 text-slate-500 line-through">
+                  <span className="w-1.5 h-1.5 bg-slate-300 rounded-full" aria-hidden="true"></span>
+                  + Paid add-ons for KDS & online orders
+                </li>
+              </ul>
+            </div>
             
-            <ul className="space-y-4">
-              <li className="flex items-center gap-3 text-slate-500 line-through">
-                <span className="w-1.5 h-1.5 bg-slate-300 rounded-full"></span>
-                + Setup fees
-              </li>
-              <li className="flex items-center gap-3 text-slate-500 line-through">
-                <span className="w-1.5 h-1.5 bg-slate-300 rounded-full"></span>
-                + Hardware costs
-              </li>
-              <li className="flex items-center gap-3 text-slate-500 line-through">
-                <span className="w-1.5 h-1.5 bg-slate-300 rounded-full"></span>
-                + Transaction cuts
-              </li>
-            </ul>
+            <div className="pt-6 mt-6 border-t border-slate-100 text-xs text-slate-400 text-center">
+              Requires dedicated hardware and vendor lock-in
+            </div>
           </motion.div>
 
           {/* Us */}
@@ -58,31 +75,43 @@ const Pricing = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="bg-slate-900 text-white rounded-md p-8 md:p-10 relative overflow-hidden shadow-2xl"
+            className="bg-slate-900 text-white rounded-2xl p-8 md:p-10 relative overflow-hidden shadow-2xl h-full flex flex-col justify-between"
           >
             <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/20 blur-[80px] rounded-full" />
             
             <div className="relative z-10">
-              <div className="inline-block px-3 py-1 bg-gradient-primary rounded-full text-xs font-medium tracking-tightr uppercase mb-4">
+              <div className="inline-block px-3 py-1 bg-gradient-primary rounded-full text-xs font-semibold text-white mb-4 shadow-sm">
                 Skewer POS Premium
               </div>
-              <h3 className="text-2xl font-medium mb-2">Everything Included</h3>
+              <h3 className="text-2xl font-bold mb-2">Everything Included</h3>
               <div className="text-5xl font-semibold text-white mb-8">$8<span className="text-xl font-normal text-slate-400">/month flat</span></div>
               
               <ul className="space-y-4">
                 <li className="flex items-center gap-3 text-slate-200">
-                  <Check className="w-5 h-5 text-blue-400" />
-                  Unlimited orders
+                  <Check className="w-5 h-5 text-blue-400" aria-hidden="true" />
+                  Unlimited orders & tables
                 </li>
                 <li className="flex items-center gap-3 text-slate-200">
-                  <Check className="w-5 h-5 text-blue-400" />
-                  Complete control
+                  <Check className="w-5 h-5 text-blue-400" aria-hidden="true" />
+                  No expensive hardware required
                 </li>
                 <li className="flex items-center gap-3 text-slate-200">
-                  <Check className="w-5 h-5 text-blue-400" />
-                  No hardware required
+                  <Check className="w-5 h-5 text-blue-400" aria-hidden="true" />
+                  Commission-free online ordering storefront
+                </li>
+                <li className="flex items-center gap-3 text-slate-200">
+                  <Check className="w-5 h-5 text-blue-400" aria-hidden="true" />
+                  Digital kitchen order display (KDS)
+                </li>
+                <li className="flex items-center gap-3 text-slate-200">
+                  <Check className="w-5 h-5 text-blue-400" aria-hidden="true" />
+                  Cancel anytime, zero lock-in contracts
                 </li>
               </ul>
+            </div>
+
+            <div className="pt-6 mt-6 border-t border-slate-800 text-xs text-slate-400 text-center relative z-10">
+              Free setup & 100 free orders every month
             </div>
           </motion.div>
 
@@ -93,10 +122,10 @@ const Pricing = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="max-w-4xl mx-auto bg-blue-50 border border-blue-100 rounded-sm p-6 text-center"
+          className="max-w-4xl mx-auto bg-blue-50 border border-blue-200 rounded-xl p-6 text-center shadow-sm"
         >
           <p className="text-blue-900 font-medium">
-            <span className="font-medium">Start completely risk-free.</span> Your first 100 orders every month are on us. No credit card required to start.
+            <span className="font-semibold">Start completely risk-free.</span> Your first 100 orders every month are on us. No credit card required to start.
           </p>
         </motion.div>
 
